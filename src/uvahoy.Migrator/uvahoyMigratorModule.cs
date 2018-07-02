@@ -28,7 +28,7 @@ namespace uvahoy.Migrator
             string cnnString = _appConfiguration.GetConnectionString(uvahoyConsts.ConnectionStringName);
 
             if (System.Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
-                cnnString = _appConfiguration.GetConnectionString("defaultConnection");
+                cnnString = System.Environment.GetEnvironmentVariable("defaultConnection");
 
 
             Configuration.DefaultNameOrConnectionString = cnnString;
