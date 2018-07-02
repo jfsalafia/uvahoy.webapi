@@ -43,9 +43,13 @@ namespace uvahoy
 
         public override void PreInitialize()
         {
-            Configuration.DefaultNameOrConnectionString = _appConfiguration.GetConnectionString(
-                uvahoyConsts.ConnectionStringName
-            );
+            string cnnString = _appConfiguration.GetConnectionString(uvahoyConsts.ConnectionStringName);
+
+            if (System.Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+                cnnString = _appConfiguration.GetConnectionString("defaultConnection");
+
+
+            Configuration.DefaultNameOrConnectionString = cnnString;
 
             // Use database for language management
             Configuration.Modules.Zero().LanguageManagement.EnableDbLocalization();

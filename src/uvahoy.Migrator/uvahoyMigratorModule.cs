@@ -25,9 +25,13 @@ namespace uvahoy.Migrator
 
         public override void PreInitialize()
         {
-            Configuration.DefaultNameOrConnectionString = _appConfiguration.GetConnectionString(
-                uvahoyConsts.ConnectionStringName
-            );
+            string cnnString = _appConfiguration.GetConnectionString(uvahoyConsts.ConnectionStringName);
+
+            if (System.Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+                cnnString = _appConfiguration.GetConnectionString("defaultConnection");
+
+
+            Configuration.DefaultNameOrConnectionString = cnnString;
 
             Configuration.BackgroundJobs.IsJobExecutionEnabled = false;
             Configuration.ReplaceService(
