@@ -43,11 +43,14 @@ namespace uvahoy
 
         public override void PreInitialize()
         {
-            string cnnString = _appConfiguration.GetConnectionString(uvahoyConsts.ConnectionStringName);
+            string cnnString = string.Empty; 
 
             if (System.Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
-                cnnString = _appConfiguration.GetConnectionString("defaultConnection");
-
+                cnnString = System.Environment.GetEnvironmentVariable("defaultConnection");
+            else
+            {
+                cnnString  = _appConfiguration.GetConnectionString(uvahoyConsts.ConnectionStringName);
+            }
 
             Configuration.DefaultNameOrConnectionString = cnnString;
 
