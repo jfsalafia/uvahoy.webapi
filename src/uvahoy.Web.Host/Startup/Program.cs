@@ -13,6 +13,9 @@ namespace uvahoy.Web.Host.Startup
         public static IWebHost BuildWebHost(string[] args)
         {
             return WebHost.CreateDefaultBuilder(args)
+                 .UseKestrel()
+                .UseContentRoot(System.IO.Directory.GetCurrentDirectory())
+                .UseIISIntegration()
                 .UseStartup<Startup>()
                 .CaptureStartupErrors(true)
                 .Build();

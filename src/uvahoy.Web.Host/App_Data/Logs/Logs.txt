@@ -1,0 +1,43 @@
+DEBUG 2018-07-05 22:02:58,826 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-07-05 22:02:58,886 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2018-07-05 22:02:58,916 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.Web.Host.Startup.uvahoyWebHostModule, uvahoy.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:58,919 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyWebCoreModule, uvahoy.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:58,919 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyApplicationModule, uvahoy.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:58,919 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyCoreModule, uvahoy.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:58,920 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:58,920 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:58,920 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:58,921 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:58,921 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.EntityFrameworkCore.uvahoyEntityFrameworkModule, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:58,921 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:58,921 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:58,921 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:58,922 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:58,922 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:58,922 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:58,925 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2018-07-05 22:02:58,996 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-07-05 22:02:58,996 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-07-05 22:02:58,997 [1    ] o.Configuration.LanguageManagementConfig - Converted uvahoy (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-07-05 22:02:58,997 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-07-05 22:02:59,337 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: uvahoy.EntityFrameworkCore.uvahoyDbContext, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-05 22:02:59,768 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-07-05 22:02:59,831 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-07-05 22:02:59,871 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-07-05 22:02:59,889 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: uvahoy
+DEBUG 2018-07-05 22:02:59,917 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-07-05 22:02:59,951 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-07-05 22:03:00,010 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2018-07-05 22:03:00,010 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-07-05 22:03:00,013 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Users.Dto.CreateUserDto
+DEBUG 2018-07-05 22:03:00,013 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Users.Dto.UserDto
+DEBUG 2018-07-05 22:03:00,013 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-07-05 22:03:00,013 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-07-05 22:03:00,013 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.CreateRoleDto
+DEBUG 2018-07-05 22:03:00,013 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.PermissionDto
+DEBUG 2018-07-05 22:03:00,013 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.RoleDto
+DEBUG 2018-07-05 22:03:00,014 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-07-05 22:03:00,014 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.MultiTenancy.Dto.TenantDto
+DEBUG 2018-07-05 22:03:00,014 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.CotizacionDto
+DEBUG 2018-07-05 22:03:00,014 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.IndicadorDetailOutput
+DEBUG 2018-07-05 22:03:00,014 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.IndicadorListDto

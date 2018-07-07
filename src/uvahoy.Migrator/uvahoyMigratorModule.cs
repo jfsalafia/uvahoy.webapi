@@ -23,22 +23,29 @@ namespace uvahoy.Migrator
             );
         }
 
+        public string GetConnectionString()
+        {
+            var appConfig = System.Configuration.ConfigurationManager.AppSettings;
+
+            string dbname = appConfig["RDS_DB_NAME"];
+
+            if (string.IsNullOrEmpty(dbname)) return _appConfiguration.GetConnectionString(uvahoyConsts.ConnectionStringName);
+
+            string username = appConfig["RDS_USERNAME"];
+            string password = appConfig["RDS_PASSWORD"];
+            string hostname = appConfig["RDS_HOSTNAME"];
+            string port = appConfig["RDS_PORT"];
+
+            return "Data Source=" + hostname + ";Initial Catalog=" + dbname + ";User ID=" + username + ";Password=" + password + ";";
+        }
+
         public override void PreInitialize()
         {
-            string cnnString = string.Empty;
-
-            if (System.Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
-                cnnString = System.Environment.GetEnvironmentVariable("defaultConnection");
-            else
-            {
-                cnnString = _appConfiguration.GetConnectionString(uvahoyConsts.ConnectionStringName);
-            }
-
-            Configuration.DefaultNameOrConnectionString = cnnString;
+            Configuration.DefaultNameOrConnectionString = GetConnectionString();
 
             Configuration.BackgroundJobs.IsJobExecutionEnabled = false;
             Configuration.ReplaceService(
-                typeof(IEventBus), 
+                typeof(IEventBus),
                 () => IocManager.IocContainer.Register(
                     Component.For<IEventBus>().Instance(NullEventBus.Instance)
                 )
