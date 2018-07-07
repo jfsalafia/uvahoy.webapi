@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo Using tooling dotnet version `dotnet --version`
+      - echo Restore started on `date`
+      - dotnet restore src/uvahoy.Web.Host/uvahoy.Web.Host.csproj
+  build:
+    commands:
+      - echo Build started on `date`
+      - dotnet publish -c Release -o ./build_output src\uvahoy.Web.Host\uvahoy.Web.Host.csproj
+artifacts:
+  files:
+    -  src/uvahoy.Web.Host/build_output/**/*
+    
