@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 
 namespace uvahoy.Web.Host.Startup
 {
@@ -12,12 +13,14 @@ namespace uvahoy.Web.Host.Startup
 
         public static IWebHost BuildWebHost(string[] args)
         {
+            var config = new ConfigurationBuilder().AddCommandLine(args).Build();
+
             return WebHost.CreateDefaultBuilder(args)
                  .UseKestrel()
                 .UseContentRoot(System.IO.Directory.GetCurrentDirectory())
+                .UseConfiguration(config)
                 .UseIISIntegration()
                 .UseStartup<Startup>()
-                .CaptureStartupErrors(true)
                 .Build();
         }
     }
