@@ -23,3 +23,28 @@ INFO  2018-07-07 18:24:06,295 [1    ] uvahoy.Migrator.Log                      -
 INFO  2018-07-07 18:24:06,953 [1    ] uvahoy.Migrator.Log                      - All databases have been migrated.
 DEBUG 2018-07-07 18:24:11,555 [1    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
 DEBUG 2018-07-07 18:24:11,555 [1    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-07-15 16:41:11,019 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-07-15 16:41:11,074 [1    ] Abp.Modules.AbpModuleManager             - Found 9 ABP modules in total.
+DEBUG 2018-07-15 16:41:11,146 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.Migrator.uvahoyMigratorModule, uvahoy.Migrator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-15 16:41:11,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.EntityFrameworkCore.uvahoyEntityFrameworkModule, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-15 16:41:11,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyCoreModule, uvahoy.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-15 16:41:11,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-15 16:41:11,150 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-15 16:41:11,150 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-15 16:41:11,150 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-15 16:41:11,150 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-15 16:41:11,151 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-15 16:41:11,153 [1    ] Abp.Modules.AbpModuleManager             - 9 modules loaded.
+DEBUG 2018-07-15 16:41:11,479 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: uvahoy.EntityFrameworkCore.uvahoyDbContext, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-15 16:41:11,891 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-07-15 16:41:11,954 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-07-15 16:41:12,000 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-07-15 16:41:12,020 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: uvahoy
+INFO  2018-07-15 16:41:12,093 [1    ] uvahoy.Migrator.Log                      - Host database: server=aa1njsjqrk1krv6.chg8d82jj9cx.us-east-2.rds.amazonaws.com;database=uvahoyDb;user id=*****;password=*****
+INFO  2018-07-15 16:41:12,094 [1    ] uvahoy.Migrator.Log                      - Continue to migration for this host database and all tenants..? (Y/N): 
+INFO  2018-07-15 16:41:35,786 [1    ] uvahoy.Migrator.Log                      - HOST database migration started...
+INFO  2018-07-15 16:41:43,347 [1    ] uvahoy.Migrator.Log                      - HOST database migration completed.
+INFO  2018-07-15 16:41:43,347 [1    ] uvahoy.Migrator.Log                      - --------------------------------------------------------
+INFO  2018-07-15 16:41:44,029 [1    ] uvahoy.Migrator.Log                      - All databases have been migrated.
+DEBUG 2018-07-15 16:41:45,182 [1    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-07-15 16:41:45,183 [1    ] Abp.Modules.AbpModuleManager             - Shutting down completed.

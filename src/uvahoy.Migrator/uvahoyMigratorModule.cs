@@ -36,7 +36,7 @@ namespace uvahoy.Migrator
             string hostname = appConfig["RDS_HOSTNAME"];
             string port = appConfig["RDS_PORT"];
 
-            return "Data Source=" + hostname + ";Initial Catalog=" + dbname + ";User ID=" + username + ";Password=" + password + ";";
+            return "Data Source=" + hostname + ";DataBase=" + dbname + ";User ID=" + username + ";Password=" + password + ";";
         }
 
         public override void PreInitialize()
