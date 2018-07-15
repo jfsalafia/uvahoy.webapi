@@ -20,6 +20,7 @@ namespace uvahoy.Web.Host.Startup
                 .UseContentRoot(System.IO.Directory.GetCurrentDirectory())
                 .UseConfiguration(config)
                 .UseIISIntegration()
+                .CaptureStartupErrors(true)
                 .UseStartup<Startup>()
                 .Build();
         }
