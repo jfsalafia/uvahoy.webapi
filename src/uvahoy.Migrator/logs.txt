@@ -1,0 +1,100 @@
+﻿DEBUG 2018-07-28 09:19:21,033 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-07-28 09:19:21,093 [1    ] Abp.Modules.AbpModuleManager             - Found 9 ABP modules in total.
+DEBUG 2018-07-28 09:19:21,185 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.Migrator.uvahoyMigratorModule, uvahoy.Migrator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:19:21,188 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.EntityFrameworkCore.uvahoyEntityFrameworkModule, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:19:21,189 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyCoreModule, uvahoy.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:19:21,189 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:19:21,189 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:19:21,190 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:19:21,190 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:19:21,190 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:19:21,191 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:19:21,194 [1    ] Abp.Modules.AbpModuleManager             - 9 modules loaded.
+DEBUG 2018-07-28 09:19:21,579 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: uvahoy.EntityFrameworkCore.uvahoyDbContext, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:19:22,034 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-07-28 09:19:22,098 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-07-28 09:19:22,143 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-07-28 09:19:22,164 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: uvahoy
+INFO  2018-07-28 09:19:22,271 [1    ] uvahoy.Migrator.Log                      - Host database: server=aa1njsjqrk1krv6.chg8d82jj9cx.us-east-2.rds.amazonaws.com;database=uvahoyDb;user id=*****;password=*****
+INFO  2018-07-28 09:19:22,271 [1    ] uvahoy.Migrator.Log                      - Continue to migration for this host database and all tenants..? (Y/N): 
+INFO  2018-07-28 09:19:43,400 [1    ] uvahoy.Migrator.Log                      - HOST database migration started...
+INFO  2018-07-28 09:19:50,867 [1    ] uvahoy.Migrator.Log                      - HOST database migration completed.
+INFO  2018-07-28 09:19:50,868 [1    ] uvahoy.Migrator.Log                      - --------------------------------------------------------
+INFO  2018-07-28 09:19:51,537 [1    ] uvahoy.Migrator.Log                      - All databases have been migrated.
+DEBUG 2018-07-28 09:19:52,648 [1    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-07-28 09:19:52,649 [1    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-07-28 09:43:55,257 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-07-28 09:43:55,279 [1    ] Abp.Modules.AbpModuleManager             - Found 9 ABP modules in total.
+DEBUG 2018-07-28 09:43:55,352 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.Migrator.uvahoyMigratorModule, uvahoy.Migrator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:43:55,355 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.EntityFrameworkCore.uvahoyEntityFrameworkModule, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:43:55,355 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyCoreModule, uvahoy.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:43:55,356 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:43:55,356 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:43:55,356 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:43:55,356 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:43:55,357 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:43:55,357 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:43:55,361 [1    ] Abp.Modules.AbpModuleManager             - 9 modules loaded.
+DEBUG 2018-07-28 09:43:55,691 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: uvahoy.EntityFrameworkCore.uvahoyDbContext, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 09:43:56,108 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-07-28 09:43:56,160 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-07-28 09:43:56,203 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-07-28 09:43:56,224 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: uvahoy
+INFO  2018-07-28 09:43:56,290 [1    ] uvahoy.Migrator.Log                      - Host database: server=(LocalDb)\MSSQLLocalDB;database=uvahoyDb;trusted_connection=True
+INFO  2018-07-28 09:43:56,291 [1    ] uvahoy.Migrator.Log                      - Continue to migration for this host database and all tenants..? (Y/N): 
+INFO  2018-07-28 09:43:57,962 [1    ] uvahoy.Migrator.Log                      - HOST database migration started...
+INFO  2018-07-28 09:43:58,791 [1    ] uvahoy.Migrator.Log                      - HOST database migration completed.
+INFO  2018-07-28 09:43:58,791 [1    ] uvahoy.Migrator.Log                      - --------------------------------------------------------
+INFO  2018-07-28 09:43:58,824 [1    ] uvahoy.Migrator.Log                      - All databases have been migrated.
+DEBUG 2018-07-28 09:43:59,667 [1    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-07-28 09:43:59,667 [1    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-07-28 10:00:48,801 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-07-28 10:00:48,863 [1    ] Abp.Modules.AbpModuleManager             - Found 9 ABP modules in total.
+DEBUG 2018-07-28 10:00:48,962 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.Migrator.uvahoyMigratorModule, uvahoy.Migrator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:00:48,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.EntityFrameworkCore.uvahoyEntityFrameworkModule, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:00:48,966 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyCoreModule, uvahoy.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:00:48,966 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:00:48,966 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:00:48,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:00:48,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:00:48,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:00:48,968 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:00:48,971 [1    ] Abp.Modules.AbpModuleManager             - 9 modules loaded.
+DEBUG 2018-07-28 10:00:49,326 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: uvahoy.EntityFrameworkCore.uvahoyDbContext, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:00:49,770 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-07-28 10:00:49,820 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-07-28 10:00:49,866 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-07-28 10:00:49,888 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: uvahoy
+INFO  2018-07-28 10:00:49,951 [1    ] uvahoy.Migrator.Log                      - Host database: server=(LocalDb)\MSSQLLocalDB;database=uvahoyDb;trusted_connection=True
+INFO  2018-07-28 10:00:49,951 [1    ] uvahoy.Migrator.Log                      - Continue to migration for this host database and all tenants..? (Y/N): 
+INFO  2018-07-28 10:01:12,937 [1    ] uvahoy.Migrator.Log                      - HOST database migration started...
+INFO  2018-07-28 10:01:15,334 [1    ] uvahoy.Migrator.Log                      - HOST database migration completed.
+INFO  2018-07-28 10:01:15,334 [1    ] uvahoy.Migrator.Log                      - --------------------------------------------------------
+INFO  2018-07-28 10:01:15,403 [1    ] uvahoy.Migrator.Log                      - All databases have been migrated.
+DEBUG 2018-07-28 10:01:16,273 [1    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-07-28 10:01:16,273 [1    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-07-28 10:04:44,231 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-07-28 10:04:44,253 [1    ] Abp.Modules.AbpModuleManager             - Found 9 ABP modules in total.
+DEBUG 2018-07-28 10:04:44,348 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.Migrator.uvahoyMigratorModule, uvahoy.Migrator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:04:44,351 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.EntityFrameworkCore.uvahoyEntityFrameworkModule, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:04:44,352 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyCoreModule, uvahoy.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:04:44,352 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:04:44,353 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:04:44,353 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:04:44,353 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:04:44,354 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:04:44,354 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:04:44,357 [1    ] Abp.Modules.AbpModuleManager             - 9 modules loaded.
+DEBUG 2018-07-28 10:04:44,718 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: uvahoy.EntityFrameworkCore.uvahoyDbContext, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-07-28 10:04:45,161 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-07-28 10:04:45,211 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-07-28 10:04:45,256 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-07-28 10:04:45,279 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: uvahoy
+INFO  2018-07-28 10:04:45,342 [1    ] uvahoy.Migrator.Log                      - Host database: server=(LocalDb)\MSSQLLocalDB;database=uvahoyDb;trusted_connection=True
+INFO  2018-07-28 10:04:45,342 [1    ] uvahoy.Migrator.Log                      - Continue to migration for this host database and all tenants..? (Y/N): 
+INFO  2018-07-28 10:04:55,934 [1    ] uvahoy.Migrator.Log                      - HOST database migration started...
+INFO  2018-07-28 10:04:58,336 [1    ] uvahoy.Migrator.Log                      - HOST database migration completed.
+INFO  2018-07-28 10:04:58,336 [1    ] uvahoy.Migrator.Log                      - --------------------------------------------------------
+INFO  2018-07-28 10:04:58,398 [1    ] uvahoy.Migrator.Log                      - All databases have been migrated.
+DEBUG 2018-07-28 10:04:59,782 [1    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-07-28 10:04:59,783 [1    ] Abp.Modules.AbpModuleManager             - Shutting down completed.

@@ -23,21 +23,30 @@ namespace uvahoy.Migrator
             );
         }
 
+
+        private static string GetEnvironmentConfig(string variable)
+        {
+            if (!string.IsNullOrEmpty(System.Environment.GetEnvironmentVariable(variable)))
+            {
+                return System.Environment.GetEnvironmentVariable(variable);
+            }
+            return System.Configuration.ConfigurationManager.AppSettings[variable];
+        }
+
         public string GetConnectionString()
         {
-            var appConfig = System.Configuration.ConfigurationManager.AppSettings;
-
-            string dbname = appConfig["RDS_DB_NAME"];
+            string dbname = GetEnvironmentConfig("RDS_DB_NAME");
 
             if (string.IsNullOrEmpty(dbname)) return _appConfiguration.GetConnectionString(uvahoyConsts.ConnectionStringName);
 
-            string username = appConfig["RDS_USERNAME"];
-            string password = appConfig["RDS_PASSWORD"];
-            string hostname = appConfig["RDS_HOSTNAME"];
-            string port = appConfig["RDS_PORT"];
+            string username = GetEnvironmentConfig("RDS_USERNAME");
+            string password = GetEnvironmentConfig("RDS_PASSWORD");
+            string hostname = GetEnvironmentConfig("RDS_HOSTNAME");
+            string port = GetEnvironmentConfig("RDS_PORT");
 
-            return "Data Source=" + hostname + ";DataBase=" + dbname + ";User ID=" + username + ";Password=" + password + ";";
+            return "Data Source=" + hostname + ";Database=" + dbname + ";User ID=" + username + ";Password=" + password + ";";
         }
+
 
         public override void PreInitialize()
         {

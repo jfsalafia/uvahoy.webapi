@@ -14,9 +14,8 @@ namespace uvahoy.Web.Host.Startup
         public static IWebHost BuildWebHost(string[] args)
         {
             var config = new ConfigurationBuilder().AddCommandLine(args).Build();
-
             return WebHost.CreateDefaultBuilder(args)
-                 .UseKestrel()
+                .UseKestrel()
                 .UseContentRoot(System.IO.Directory.GetCurrentDirectory())
                 .UseConfiguration(config)
                 .UseIISIntegration()
