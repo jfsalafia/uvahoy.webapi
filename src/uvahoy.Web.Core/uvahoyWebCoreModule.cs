@@ -27,7 +27,7 @@ namespace uvahoy
 #if FEATURE_SIGNALR 
         ,typeof(AbpWebSignalRModule)
 #elif FEATURE_SIGNALR_ASPNETCORE
-        ,typeof(AbpAspNetCoreSignalRModule)
+        , typeof(AbpAspNetCoreSignalRModule)
 #endif
      )]
     public class uvahoyWebCoreModule : AbpModule
@@ -41,9 +41,10 @@ namespace uvahoy
             _appConfiguration = env.GetAppConfiguration();
         }
 
-        private static string GetEnvironmentConfig (string variable)
+        private static string GetEnvironmentConfig(string variable)
         {
-            if(!string.IsNullOrEmpty(System.Environment.GetEnvironmentVariable(variable))) {
+            if (!string.IsNullOrEmpty(System.Environment.GetEnvironmentVariable(variable)))
+            {
                 return System.Environment.GetEnvironmentVariable(variable);
             }
             return System.Configuration.ConfigurationManager.AppSettings[variable];
@@ -51,23 +52,23 @@ namespace uvahoy
 
         public string GetConnectionString()
         {
-            //string dbname = GetEnvironmentConfig("RDS_DB_NAME");
+            string dbname = GetEnvironmentConfig("RDS_DB_NAME");
 
-            //if (string.IsNullOrEmpty(dbname))
+            if (string.IsNullOrEmpty(dbname))
                 return _appConfiguration.GetConnectionString(uvahoyConsts.ConnectionStringName);
 
-            //string username = GetEnvironmentConfig("RDS_USERNAME");
-            //string password = GetEnvironmentConfig("RDS_PASSWORD");
-            //string hostname = GetEnvironmentConfig("RDS_HOSTNAME");
-            //string port = GetEnvironmentConfig("RDS_PORT");
+            string username = GetEnvironmentConfig("RDS_USERNAME");
+            string password = GetEnvironmentConfig("RDS_PASSWORD");
+            string hostname = GetEnvironmentConfig("RDS_HOSTNAME");
+            string port = GetEnvironmentConfig("RDS_PORT");
 
-            //return "Data Source=" + hostname + ";Database=" + dbname + ";User ID=" + username + ";Password=" + password + ";";
+            return "Data Source=" + hostname + ";Database=" + dbname + ";User ID=" + username + ";Password=" + password + ";";
         }
 
 
         public override void PreInitialize()
         {
-        
+
             Configuration.DefaultNameOrConnectionString = GetConnectionString();
 
             // Use database for language management
