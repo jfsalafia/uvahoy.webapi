@@ -75,7 +75,7 @@ namespace uvahoy.Indicadores
 
             if (!input.FechaHasta.HasValue)
             {
-                input.FechaHasta = input.FechaDesde;
+                input.FechaHasta = input.FechaDesde.Date;
             }
 
             var dto = @indicador.MapTo<IndicadorDetailOutput>();
@@ -87,19 +87,19 @@ namespace uvahoy.Indicadores
 
             var cotizaciones = new List<CotizacionDto>(cotizacionesDB.ConvertAll(c => c.MapTo<CotizacionDto>()));
 
-            var fechaBusquedaCotizacion = input.FechaDesde;
-            var diff = input.FechaHasta.Value - input.FechaDesde;
+            var fechaBusquedaCotizacion = input.FechaDesde.Date;
+            var diff = input.FechaHasta.Value.Date - input.FechaDesde;
 
             if (cotizacionesDB.Count() <= diff.Days && diff.Days >= 0)
             {
                 var cotizacionesCloud = GetCotizaciones(indicador.FuenteDatos, indicador.MetodoActualizacion, indicador.FormatoDatos, input.FechaDesde, input.FechaHasta.Value);
-                var keys = cotizacionesDB.Select(cdb => cdb.FechaHoraCotizacion);
+                var keys = cotizacionesDB.Select(cdb => cdb.FechaHoraCotizacion.Date);
 
-                var faltantes = cotizacionesCloud.Where(c => !keys.Contains(c.Key));
+                var faltantes = cotizacionesCloud.Where(c => !keys.Contains(c.Key.Date));
 
                 foreach (var vc in faltantes.Where(f => f.Value.HasValue))
                 {
-                    var cotDB = Cotizacion.Create(input.IndicadorId, vc.Key, vc.Value.Value);
+                    var cotDB = Cotizacion.Create(input.IndicadorId, vc.Key.Date, vc.Value.Value);
                     _cotizacionRepository.Insert(cotDB);
 
                     cotizaciones.Add(cotDB.MapTo<CotizacionDto>());
