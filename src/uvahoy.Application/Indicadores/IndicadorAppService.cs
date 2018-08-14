@@ -87,7 +87,7 @@ namespace uvahoy.Indicadores
 
             var cotizaciones = new List<CotizacionDto>(cotizacionesDB.ConvertAll(c => c.MapTo<CotizacionDto>()));
 
-           
+
             var diff = input.FechaHasta.Value.Date - input.FechaDesde.Date;
 
             if (cotizacionesDB.Count() <= diff.Days && diff.Days >= 0)
@@ -104,26 +104,44 @@ namespace uvahoy.Indicadores
 
                     cotizaciones.Add(cotDB.MapTo<CotizacionDto>());
                 }
+
+
+
             }
 
-            for (var i = 1; i <= diff.Days; i++)
+            for (var i = 0; i < diff.Days; i++)
             {
-                var key = input.FechaDesde.Date.AddDays(i);
+                var fechaBusqueda = input.FechaDesde.Date.AddDays(i);
 
-                if (!cotizaciones.Any(cx => cx.FechaHoraCotizacion == key))
+                if (!cotizaciones.Any(cx => cx.IndicadorId == input.IndicadorId && cx.FechaHoraCotizacion == fechaBusqueda))
                 {
-                    var previous = cotizaciones.LastOrDefault(p => p.FechaHoraCotizacion <= key);
-                    if (previous != null)
+                    var cotizacionPrevia = cotizaciones.LastOrDefault(p => p.IndicadorId == input.IndicadorId && p.FechaHoraCotizacion <= fechaBusqueda);
+
+                    if (cotizacionPrevia != null)
                     {
                         cotizaciones.Add(new CotizacionDto()
                         {
-                            CreationTime = previous.CreationTime,
-                            FechaHoraCotizacion = key,
-                            IndicadorId = previous.IndicadorId,
-                            ValorCotizacion = previous.ValorCotizacion,
-                            Id = previous.Id * -1,
-                            CreatorUserId = previous.CreatorUserId
+                            CreationTime = cotizacionPrevia.CreationTime,
+                            FechaHoraCotizacion = fechaBusqueda,
+                            IndicadorId = cotizacionPrevia.IndicadorId,
+                            ValorCotizacion = cotizacionPrevia.ValorCotizacion,
+                            Id = cotizacionPrevia.Id * -1,
+                            CreatorUserId = cotizacionPrevia.CreatorUserId
                         });
+                    }
+                    else
+                    {
+                        var cotizacionPreviaDb = _cotizacionRepository
+                           .GetAll()
+                           .LastOrDefault(c => c.IndicadorId == input.IndicadorId && c.FechaHoraCotizacion <= input.FechaDesde);
+
+                        if (cotizacionPreviaDb != null)
+                        {
+                            var x = cotizacionPreviaDb.MapTo<CotizacionDto>();
+
+                            x.FechaHoraCotizacion = fechaBusqueda;
+                            cotizaciones.Add(x);
+                        }
                     }
                 }
             }
