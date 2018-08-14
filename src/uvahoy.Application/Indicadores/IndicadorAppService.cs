@@ -87,8 +87,8 @@ namespace uvahoy.Indicadores
 
             var cotizaciones = new List<CotizacionDto>(cotizacionesDB.ConvertAll(c => c.MapTo<CotizacionDto>()));
 
-            var fechaBusquedaCotizacion = input.FechaDesde.Date;
-            var diff = input.FechaHasta.Value.Date - input.FechaDesde;
+           
+            var diff = input.FechaHasta.Value.Date - input.FechaDesde.Date;
 
             if (cotizacionesDB.Count() <= diff.Days && diff.Days >= 0)
             {
@@ -106,7 +106,32 @@ namespace uvahoy.Indicadores
                 }
             }
 
-            dto.Cotizaciones = cotizaciones.OrderBy(c => c.FechaHoraCotizacion).ToList();
+            for (var i = 1; i <= diff.Days; i++)
+            {
+                var key = input.FechaDesde.Date.AddDays(i);
+
+                if (!cotizaciones.Any(cx => cx.FechaHoraCotizacion == key))
+                {
+                    var previous = cotizaciones.LastOrDefault(p => p.FechaHoraCotizacion <= key);
+                    if (previous != null)
+                    {
+                        cotizaciones.Add(new CotizacionDto()
+                        {
+                            CreationTime = previous.CreationTime,
+                            FechaHoraCotizacion = key,
+                            IndicadorId = previous.IndicadorId,
+                            ValorCotizacion = previous.ValorCotizacion,
+                            Id = previous.Id * -1,
+                            CreatorUserId = previous.CreatorUserId
+                        });
+                    }
+                }
+            }
+
+            dto.Cotizaciones = cotizaciones
+                .Where(c => c.FechaHoraCotizacion >= input.FechaDesde && c.FechaHoraCotizacion <= input.FechaHasta.Value.Date)
+                .OrderBy(c => c.FechaHoraCotizacion.Date)
+                .ToList();
 
             return dto;
         }
