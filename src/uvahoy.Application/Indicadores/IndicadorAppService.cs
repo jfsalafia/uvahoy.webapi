@@ -93,9 +93,9 @@ namespace uvahoy.Indicadores
             if (cotizacionesDB.Count() <= diff.Days && diff.Days >= 0)
             {
                 var cotizacionesCloud = GetCotizaciones(indicador.FuenteDatos, indicador.MetodoActualizacion, indicador.FormatoDatos, input.FechaDesde, input.FechaHasta.Value);
-                var keys = cotizacionesDB.Select(cdb => cdb.FechaHoraCotizacion.Date);
+                var keys = cotizacionesDB.Select(cdb => FormatDate(cdb.FechaHoraCotizacion.Date));
 
-                var faltantes = cotizacionesCloud.Where(c => !keys.Contains(c.Key.Date));
+                var faltantes = cotizacionesCloud.Where(c => !keys.Contains(FormatDate(c.Key.Date)));
 
                 foreach (var vc in faltantes.Where(f => f.Value.HasValue))
                 {
@@ -152,15 +152,21 @@ namespace uvahoy.Indicadores
                 .ToList();
 
             return dto;
+
+        }
+
+        private static string FormatDate (DateTime d)
+        {
+            return string.Format("{0:dd/MM/yyyy}", d);
         }
 
         private IDictionary<DateTime, decimal?> GetCotizaciones(string url, string metodoActualizacion, string formatoDatos, DateTime fechaCotizacionDesde, DateTime fechaCotizacionHasta)
         {
             string requestFormat = url;
 
-            var fechaCotizacionDesdeFormatted = string.Format("{0:dd/MM/yyyy}", fechaCotizacionDesde);
+            var fechaCotizacionDesdeFormatted = FormatDate(fechaCotizacionDesde);
 
-            var fechaCotizacionHastaFormatted = string.Format("{0:dd/MM/yyyy}", fechaCotizacionHasta);
+            var fechaCotizacionHastaFormatted = FormatDate(fechaCotizacionHasta);
 
             var req = string.Format(requestFormat, fechaCotizacionDesdeFormatted, fechaCotizacionHastaFormatted);
 

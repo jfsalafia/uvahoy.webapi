@@ -618,3 +618,113 @@ DEBUG 2018-07-28 10:22:20,181 [15   ] Abp.Modules.AbpModuleManager             -
 DEBUG 2018-07-28 10:22:20,187 [15   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
 DEBUG 2018-07-28 10:22:20,190 [15   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
 DEBUG 2018-07-28 10:22:20,190 [15   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-08-15 08:04:30,827 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-08-15 08:04:30,908 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2018-08-15 08:04:30,962 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.Web.Host.Startup.uvahoyWebHostModule, uvahoy.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:30,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyWebCoreModule, uvahoy.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:30,966 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyApplicationModule, uvahoy.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:30,966 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyCoreModule, uvahoy.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:30,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:30,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:30,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:30,968 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:30,969 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.EntityFrameworkCore.uvahoyEntityFrameworkModule, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:30,970 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:30,970 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:30,971 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:30,971 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:30,971 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:30,972 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:30,975 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2018-08-15 08:04:31,260 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-08-15 08:04:31,260 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-08-15 08:04:31,260 [1    ] o.Configuration.LanguageManagementConfig - Converted uvahoy (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-08-15 08:04:31,260 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-08-15 08:04:31,765 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: uvahoy.EntityFrameworkCore.uvahoyDbContext, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-08-15 08:04:32,463 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-08-15 08:04:32,519 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-08-15 08:04:32,583 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-08-15 08:04:32,603 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: uvahoy
+DEBUG 2018-08-15 08:04:32,635 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-08-15 08:04:32,676 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-08-15 08:04:32,728 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2018-08-15 08:04:32,728 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-08-15 08:04:32,735 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Users.Dto.CreateUserDto
+DEBUG 2018-08-15 08:04:32,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Users.Dto.UserDto
+DEBUG 2018-08-15 08:04:32,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-08-15 08:04:32,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-08-15 08:04:32,737 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.CreateRoleDto
+DEBUG 2018-08-15 08:04:32,737 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.PermissionDto
+DEBUG 2018-08-15 08:04:32,737 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.RoleDto
+DEBUG 2018-08-15 08:04:32,737 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-08-15 08:04:32,738 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.MultiTenancy.Dto.TenantDto
+DEBUG 2018-08-15 08:04:32,738 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.CotizacionDto
+DEBUG 2018-08-15 08:04:32,738 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.IndicadorDetailOutput
+DEBUG 2018-08-15 08:04:32,738 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.IndicadorListDto
+INFO  2018-08-15 08:06:52,091 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetList  
+INFO  2018-08-15 08:06:53,796 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetList", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetList (uvahoy.Application)
+INFO  2018-08-15 08:06:54,356 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetList (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.GetIndicadorListInput) - Validation state: Valid
+INFO  2018-08-15 08:06:54,407 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Indicadores.IndicadorAppService.GetList (uvahoy.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 48.6305ms.
+INFO  2018-08-15 08:06:54,635 [6    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Application.Services.Dto.ListResultDto`1[[uvahoy.Indicadores.Dto.IndicadorListDto, uvahoy.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+INFO  2018-08-15 08:06:54,730 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetList (uvahoy.Application) in 929.6562ms
+INFO  2018-08-15 08:06:54,748 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2666.171ms 200 application/json; charset=utf-8
+INFO  2018-08-15 08:07:36,714 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=1&FechaDesde=2018-08-08T03:00:00.000Z&FechaHasta=2018-08-15T03:00:00.000Z  
+INFO  2018-08-15 08:07:36,714 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=2&FechaDesde=2018-08-08T03:00:00.000Z&FechaHasta=2018-08-15T03:00:00.000Z  
+INFO  2018-08-15 08:07:36,734 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2018-08-15 08:07:36,734 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2018-08-15 08:07:36,775 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+INFO  2018-08-15 08:07:36,775 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+INFO  2018-08-15 08:07:37,233 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 457.4479ms.
+INFO  2018-08-15 08:07:37,290 [10   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'uvahoy.Indicadores.Dto.IndicadorDetailOutput'.
+INFO  2018-08-15 08:07:37,304 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) in 568.8796ms
+INFO  2018-08-15 08:07:37,304 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 590.3815ms 200 application/json; charset=utf-8
+INFO  2018-08-15 08:07:37,669 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 893.1582ms.
+INFO  2018-08-15 08:07:37,682 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'uvahoy.Indicadores.Dto.IndicadorDetailOutput'.
+INFO  2018-08-15 08:07:37,682 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) in 947.7887ms
+INFO  2018-08-15 08:07:37,682 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 968.9994ms 200 application/json; charset=utf-8
+INFO  2018-08-15 08:07:58,182 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=2&FechaDesde=2018-08-08T03:00:00.000Z&FechaHasta=2018-08-15T03:00:00.000Z  
+INFO  2018-08-15 08:07:58,210 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2018-08-15 08:07:58,216 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+INFO  2018-08-15 08:07:58,883 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 666.0174ms.
+INFO  2018-08-15 08:07:58,903 [10   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'uvahoy.Indicadores.Dto.IndicadorDetailOutput'.
+INFO  2018-08-15 08:07:58,904 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) in 693.7336ms
+INFO  2018-08-15 08:07:58,904 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 722.2901ms 200 application/json; charset=utf-8
+INFO  2018-08-15 08:08:20,112 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=2&FechaDesde=2018-08-08T03:00:00.000Z&FechaHasta=2018-08-15T03:00:00.000Z  
+INFO  2018-08-15 08:08:20,116 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2018-08-15 08:08:20,118 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+INFO  2018-08-15 08:08:20,834 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 715.9292ms.
+INFO  2018-08-15 08:08:20,847 [7    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'uvahoy.Indicadores.Dto.IndicadorDetailOutput'.
+INFO  2018-08-15 08:08:20,848 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) in 732.2826ms
+INFO  2018-08-15 08:08:20,848 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 736.4732ms 200 application/json; charset=utf-8
+INFO  2018-08-15 08:11:20,329 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=1&FechaDesde=2018-08-08T03:00:00.000Z&FechaHasta=2018-08-15T03:00:00.000Z  
+INFO  2018-08-15 08:11:20,344 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2018-08-15 08:11:20,351 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+INFO  2018-08-15 08:11:20,355 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.8942ms.
+INFO  2018-08-15 08:11:20,364 [15   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'uvahoy.Indicadores.Dto.IndicadorDetailOutput'.
+INFO  2018-08-15 08:11:20,365 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) in 20.5315ms
+INFO  2018-08-15 08:11:20,365 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 35.6666ms 200 application/json; charset=utf-8
+INFO  2018-08-15 08:11:26,856 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=1&FechaDesde=2018-08-08T03:00:00.000Z&FechaHasta=2018-08-15T03:00:00.000Z  
+INFO  2018-08-15 08:11:26,861 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2018-08-15 08:11:26,864 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+INFO  2018-08-15 08:11:26,867 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.2468ms.
+INFO  2018-08-15 08:11:26,873 [11   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'uvahoy.Indicadores.Dto.IndicadorDetailOutput'.
+INFO  2018-08-15 08:11:26,873 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) in 11.9883ms
+INFO  2018-08-15 08:11:26,873 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.8862ms 200 application/json; charset=utf-8
+INFO  2018-08-15 08:11:27,584 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=1&FechaDesde=2018-08-08T03:00:00.000Z&FechaHasta=2018-08-15T03:00:00.000Z  
+INFO  2018-08-15 08:11:27,589 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2018-08-15 08:11:27,592 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+INFO  2018-08-15 08:11:27,595 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.4346ms.
+INFO  2018-08-15 08:11:27,600 [14   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'uvahoy.Indicadores.Dto.IndicadorDetailOutput'.
+INFO  2018-08-15 08:11:27,601 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) in 11.4397ms
+INFO  2018-08-15 08:11:27,601 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.9495ms 200 application/json; charset=utf-8
+INFO  2018-08-15 08:11:28,239 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=1&FechaDesde=2018-08-08T03:00:00.000Z&FechaHasta=2018-08-15T03:00:00.000Z  
+INFO  2018-08-15 08:11:28,244 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2018-08-15 08:11:28,248 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+INFO  2018-08-15 08:11:28,250 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.3743ms.
+INFO  2018-08-15 08:11:28,254 [14   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'uvahoy.Indicadores.Dto.IndicadorDetailOutput'.
+INFO  2018-08-15 08:11:28,254 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) in 10.2525ms
+INFO  2018-08-15 08:11:28,254 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.1179ms 200 application/json; charset=utf-8
+DEBUG 2018-08-15 08:13:06,550 [12   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-08-15 08:13:06,556 [12   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-08-15 08:13:06,560 [12   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-08-15 08:13:06,560 [12   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
