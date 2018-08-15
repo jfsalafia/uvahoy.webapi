@@ -82,11 +82,10 @@ namespace uvahoy.Indicadores
 
             var cotizacionesDB = _cotizacionRepository
                 .GetAll()
-                .Where(c => c.IndicadorId == input.IndicadorId && c.FechaHoraCotizacion >= input.FechaDesde && c.FechaHoraCotizacion <= input.FechaHasta)
+                .Where(c => c.IndicadorId == input.IndicadorId && c.FechaHoraCotizacion >= input.FechaDesde.Date.AddDays(-1) && c.FechaHoraCotizacion <= input.FechaHasta.Value.Date)
                 .ToList();
 
             var cotizaciones = new List<CotizacionDto>(cotizacionesDB.ConvertAll(c => c.MapTo<CotizacionDto>()));
-
 
             var diff = input.FechaHasta.Value.Date - input.FechaDesde.Date;
 
@@ -113,7 +112,7 @@ namespace uvahoy.Indicadores
             {
                 var fechaBusqueda = input.FechaDesde.Date.AddDays(i);
 
-                if (!cotizaciones.Any(cx => cx.IndicadorId == input.IndicadorId && cx.FechaHoraCotizacion == fechaBusqueda))
+                if (!cotizaciones.Any(cx => cx.IndicadorId == input.IndicadorId && FormatDate(cx.FechaHoraCotizacion) == FormatDate(fechaBusqueda)))
                 {
                     var cotizacionPrevia = cotizaciones.LastOrDefault(p => p.IndicadorId == input.IndicadorId && p.FechaHoraCotizacion <= fechaBusqueda);
 
@@ -147,7 +146,7 @@ namespace uvahoy.Indicadores
             }
 
             dto.Cotizaciones = cotizaciones
-                .Where(c => c.FechaHoraCotizacion >= input.FechaDesde && c.FechaHoraCotizacion <= input.FechaHasta.Value.Date)
+                .Where(c => c.FechaHoraCotizacion >= input.FechaDesde.Date && c.FechaHoraCotizacion <= input.FechaHasta.Value.Date)
                 .OrderBy(c => c.FechaHoraCotizacion.Date)
                 .ToList();
 
