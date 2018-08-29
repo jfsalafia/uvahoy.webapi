@@ -78,20 +78,27 @@ namespace uvahoy.Indicadores
                 input.FechaHasta = input.FechaDesde.Date;
             }
 
-            var dto = @indicador.MapTo<IndicadorDetailOutput>();
+			DateTime fh = GetWorkDay(input.FechaHasta.Value.Date);
+
+			DateTime fd = GetWorkDay(input.FechaDesde.Date);
+
+
+			var dto = @indicador.MapTo<IndicadorDetailOutput>();
 
             var cotizacionesDB = _cotizacionRepository
                 .GetAll()
-                .Where(c => c.IndicadorId == input.IndicadorId && c.FechaHoraCotizacion >= input.FechaDesde.Date.AddDays(-1) && c.FechaHoraCotizacion <= input.FechaHasta.Value.Date)
+                .Where(c => c.IndicadorId == input.IndicadorId && c.FechaHoraCotizacion >= input.FechaDesde.Date.AddDays(-1) && c.FechaHoraCotizacion <= fh)
                 .ToList();
 
             var cotizaciones = new List<CotizacionDto>(cotizacionesDB.ConvertAll(c => c.MapTo<CotizacionDto>()));
 
-            var diff = input.FechaHasta.Value.Date - input.FechaDesde.Date;
+			
+
+            var diff = fh - fd;
 
             if (cotizacionesDB.Count() <= diff.Days && diff.Days >= 0)
             {
-                var cotizacionesCloud = GetCotizaciones(indicador.FuenteDatos, indicador.MetodoActualizacion, indicador.FormatoDatos, input.FechaDesde, input.FechaHasta.Value);
+                var cotizacionesCloud = GetCotizaciones(indicador.FuenteDatos, indicador.MetodoActualizacion, indicador.FormatoDatos, fd, fh);
                 var keys = cotizacionesDB.Select(cdb => FormatDate(cdb.FechaHoraCotizacion.Date));
 
                 var faltantes = cotizacionesCloud.Where(c => !keys.Contains(FormatDate(c.Key.Date)));
@@ -154,7 +161,21 @@ namespace uvahoy.Indicadores
 
         }
 
-        private static string FormatDate (DateTime d)
+		private DateTime GetWorkDay(DateTime date)
+		{
+			if(date.DayOfWeek == DayOfWeek.Sunday)
+			{
+				return date.AddDays(1);
+			}
+			if (date.DayOfWeek == DayOfWeek.Saturday)
+			{
+				return date.AddDays(-1);
+			}
+			return date;
+
+		}
+
+		private static string FormatDate (DateTime d)
         {
             return string.Format("{0:dd/MM/yyyy}", d);
         }
@@ -175,21 +196,38 @@ namespace uvahoy.Indicadores
 
             request.Method = metodoActualizacion;
 
-            WebResponse wr = request.GetResponse();
+			WebResponse webResponse = null;
 
-            Stream receiveStream = wr.GetResponseStream();
+			try
+			{
+				webResponse = request.GetResponse();
 
-            using (StreamReader reader = new StreamReader(receiveStream, System.Text.Encoding.UTF8))
-            {
-                if (formatoDatos == "HTML")
-                {
-                    return GetCotizacionesFromHTML(reader.ReadToEnd());
-                }
-                else
-                {
-                    return GetCotizacionesFromJSON(reader.ReadToEnd());
-                }
-            }
+				Stream receiveStream = webResponse.GetResponseStream();
+
+				using (StreamReader reader = new StreamReader(receiveStream, System.Text.Encoding.UTF8))
+				{
+					if (formatoDatos == "HTML")
+					{
+						return GetCotizacionesFromHTML(reader.ReadToEnd());
+					}
+					else
+					{
+						return GetCotizacionesFromJSON(reader.ReadToEnd());
+					}
+				}
+			}
+			catch (WebException ex)
+			{
+				Logger.Error(ex.Message);
+				return new Dictionary<DateTime, decimal?>();
+			}
+			finally
+			{
+				if (response != null)
+				{
+					webResponse.Close();
+				}
+			}
         }
 
         private IDictionary<DateTime, decimal?> GetCotizacionesFromJSON(string json)
