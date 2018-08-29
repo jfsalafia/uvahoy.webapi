@@ -87,7 +87,7 @@ namespace uvahoy.Indicadores
 
             var cotizacionesDB = _cotizacionRepository
                 .GetAll()
-                .Where(c => c.IndicadorId == input.IndicadorId && c.FechaHoraCotizacion >= input.FechaDesde.Date.AddDays(-1) && c.FechaHoraCotizacion <= fh)
+                .Where(c => c.IndicadorId == input.IndicadorId && c.FechaHoraCotizacion >= fd.AddDays(-1) && c.FechaHoraCotizacion <= fh.AddDays(1))
                 .ToList();
 
             var cotizaciones = new List<CotizacionDto>(cotizacionesDB.ConvertAll(c => c.MapTo<CotizacionDto>()));
