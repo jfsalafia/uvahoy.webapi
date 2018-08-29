@@ -114,7 +114,7 @@ namespace uvahoy.Indicadores
 
                 if (!cotizaciones.Any(cx => cx.IndicadorId == input.IndicadorId && FormatDate(cx.FechaHoraCotizacion) == FormatDate(fechaBusqueda)))
                 {
-                    var cotizacionPrevia = cotizaciones.LastOrDefault(p => p.IndicadorId == input.IndicadorId && p.FechaHoraCotizacion <= fechaBusqueda);
+                    var cotizacionPrevia = cotizaciones.OrderBy(c => c.FechaHoraCotizacion).LastOrDefault(p => p.IndicadorId == input.IndicadorId && p.FechaHoraCotizacion <= fechaBusqueda);
 
                     if (cotizacionPrevia != null)
                     {
