@@ -139,7 +139,8 @@ namespace uvahoy.Indicadores
                     {
                         var cotizacionPreviaDb = _cotizacionRepository
                            .GetAll()
-                           .LastOrDefault(c => c.IndicadorId == input.IndicadorId && c.FechaHoraCotizacion <= input.FechaDesde);
+                           .OrderBy(c => c.FechaHoraCotizacion)
+                           .LastOrDefault(c => c.IndicadorId == input.IndicadorId && c.FechaHoraCotizacion <= fechaBusqueda);
 
                         if (cotizacionPreviaDb != null)
                         {
