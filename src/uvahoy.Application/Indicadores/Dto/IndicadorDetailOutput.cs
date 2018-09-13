@@ -17,6 +17,15 @@ namespace uvahoy.Indicadores.Dto
         public ICollection<CotizacionDto> Cotizaciones { get; set; }
     }
 
+    public class MultiIndicadorDetailOutput
+    {
+        public Dictionary<int, string> Nombres { get; set; }
+
+        public Dictionary<int, string> Descripciones { get; set; }
+
+        public ICollection<CotizacionDto> Cotizaciones { get; set; }
+    }
+
     public class IndicadorDetailInput : IValidatableObject
     {
   
@@ -33,6 +42,18 @@ namespace uvahoy.Indicadores.Dto
             yield return ValidationResult.Success;
 
 
+        }
+    }
+
+    public class MultiIndicadorDetailInput : IValidatableObject
+    {
+        public IEnumerable<int> Indicadores { get; set; }
+
+        public IEnumerable<DateTime> Fechas { get; set; }
+
+        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+            yield return ValidationResult.Success;
         }
     }
 }

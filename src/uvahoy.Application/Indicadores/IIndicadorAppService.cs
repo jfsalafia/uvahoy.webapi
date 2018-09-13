@@ -16,5 +16,7 @@ namespace uvahoy.Indicadores
         ListResultDto<IndicadorListDto> GetList(GetIndicadorListInput input);
 
         Task RegistrarIndicadorUsuario(EntityDto input);
+
+        MultiIndicadorDetailOutput GetMultiIndicadorDetail(MultiIndicadorDetailInput input);
     }
 }

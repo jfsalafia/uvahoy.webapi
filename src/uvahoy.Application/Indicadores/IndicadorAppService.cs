@@ -61,6 +61,48 @@ namespace uvahoy.Indicadores
             await _indicadorUsuarioRepository.InsertAsync(IndicadorUsuario.Create(indicador, @user));
         }
 
+        public MultiIndicadorDetailOutput GetMultiIndicadorDetail(MultiIndicadorDetailInput input)
+        {
+            var res = new MultiIndicadorDetailOutput
+            {
+                Nombres = new Dictionary<int, string>()
+            };
+
+            if (input.Indicadores != null && input.Fechas != null)
+            {
+                foreach (var i in input.Indicadores)
+                {
+
+                    foreach (var f in input.Fechas)
+                    {
+                        var item = GetIndicadorDetail(new IndicadorDetailInput()
+                        {
+                            IndicadorId = i,
+                            FechaDesde = f,
+                            FechaHasta = f
+                        });
+
+                        if (res.Nombres.ContainsKey(i))
+                        {
+                            res.Nombres[i] = item.Nombre;
+                        }
+                        else
+                        {
+                            res.Nombres.Add(i, item.Nombre);
+                        }
+
+                        foreach (var cot in item.Cotizaciones)
+                        {
+                            res.Cotizaciones.Add(cot);
+                        }
+                    }
+                }
+
+            }
+
+            return res;
+        }
+
         public IndicadorDetailOutput GetIndicadorDetail(IndicadorDetailInput input)
         {
             var @indicador = _indicadorRepository
@@ -78,21 +120,21 @@ namespace uvahoy.Indicadores
                 input.FechaHasta = input.FechaDesde.Date;
             }
 
-			DateTime fh = GetWorkDay(input.FechaHasta.Value.Date);
+            DateTime fh = GetWorkDay(input.FechaHasta.Value.Date);
 
-			DateTime fd = GetWorkDay(input.FechaDesde.Date);
+            DateTime fd = GetWorkDay(input.FechaDesde.Date);
 
 
-			var dto = @indicador.MapTo<IndicadorDetailOutput>();
+            var dto = @indicador.MapTo<IndicadorDetailOutput>();
 
             var cotizacionesDB = _cotizacionRepository
                 .GetAll()
-                .Where(c => c.IndicadorId == input.IndicadorId && c.FechaHoraCotizacion >= fd.AddDays(-1) && c.FechaHoraCotizacion <= fh.AddDays(1))
+                .Where(c => c.IndicadorId == input.IndicadorId && c.FechaHoraCotizacion >= fd.AddDays(-2) && c.FechaHoraCotizacion <= fh.AddDays(1))
                 .ToList();
 
             var cotizaciones = new List<CotizacionDto>(cotizacionesDB.ConvertAll(c => c.MapTo<CotizacionDto>()));
 
-			
+
 
             var diff = fh - fd;
 
@@ -162,21 +204,21 @@ namespace uvahoy.Indicadores
 
         }
 
-		private DateTime GetWorkDay(DateTime date)
-		{
-			if(date.DayOfWeek == DayOfWeek.Sunday)
-			{
-				return date.AddDays(1);
-			}
-			if (date.DayOfWeek == DayOfWeek.Saturday)
-			{
-				return date.AddDays(-1);
-			}
-			return date;
+        private DateTime GetWorkDay(DateTime date)
+        {
+            if (date.DayOfWeek == DayOfWeek.Sunday)
+            {
+                return date.AddDays(1);
+            }
+            if (date.DayOfWeek == DayOfWeek.Saturday)
+            {
+                return date.AddDays(-1);
+            }
+            return date;
 
-		}
+        }
 
-		private static string FormatDate (DateTime d)
+        private static string FormatDate(DateTime d)
         {
             return string.Format("{0:dd/MM/yyyy}", d);
         }
@@ -197,38 +239,38 @@ namespace uvahoy.Indicadores
 
             request.Method = metodoActualizacion;
 
-			WebResponse webResponse = null;
+            WebResponse webResponse = null;
 
-			try
-			{
-				webResponse = request.GetResponse();
+            try
+            {
+                webResponse = request.GetResponse();
 
-				Stream receiveStream = webResponse.GetResponseStream();
+                Stream receiveStream = webResponse.GetResponseStream();
 
-				using (StreamReader reader = new StreamReader(receiveStream, System.Text.Encoding.UTF8))
-				{
-					if (formatoDatos == "HTML")
-					{
-						return GetCotizacionesFromHTML(reader.ReadToEnd());
-					}
-					else
-					{
-						return GetCotizacionesFromJSON(reader.ReadToEnd());
-					}
-				}
-			}
-			catch (WebException ex)
-			{
-				Logger.Error(ex.Message);
-				return new Dictionary<DateTime, decimal?>();
-			}
-			finally
-			{
-				if (response != null)
-				{
-					webResponse.Close();
-				}
-			}
+                using (StreamReader reader = new StreamReader(receiveStream, System.Text.Encoding.UTF8))
+                {
+                    if (formatoDatos == "HTML")
+                    {
+                        return GetCotizacionesFromHTML(reader.ReadToEnd());
+                    }
+                    else
+                    {
+                        return GetCotizacionesFromJSON(reader.ReadToEnd());
+                    }
+                }
+            }
+            catch (WebException ex)
+            {
+                Logger.Error(ex.Message);
+                return new Dictionary<DateTime, decimal?>();
+            }
+            finally
+            {
+                if (response != null)
+                {
+                    webResponse.Close();
+                }
+            }
         }
 
         private IDictionary<DateTime, decimal?> GetCotizacionesFromJSON(string json)
