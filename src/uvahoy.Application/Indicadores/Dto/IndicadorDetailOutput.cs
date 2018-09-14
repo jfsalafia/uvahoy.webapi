@@ -47,9 +47,9 @@ namespace uvahoy.Indicadores.Dto
 
     public class MultiIndicadorDetailInput : IValidatableObject
     {
-        public IEnumerable<int> Indicadores { get; set; }
+        public string Indicadores { get; set; }
 
-        public IEnumerable<DateTime> Fechas { get; set; }
+        public string Fechas { get; set; }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {

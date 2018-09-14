@@ -70,25 +70,26 @@ namespace uvahoy.Indicadores
 
             if (input.Indicadores != null && input.Fechas != null)
             {
-                foreach (var i in input.Indicadores)
+                foreach (var i in input.Indicadores.Split())
                 {
+                    var indId = int.Parse(i);
 
-                    foreach (var f in input.Fechas)
+                    foreach (var f in input.Fechas.Split())
                     {
                         var item = GetIndicadorDetail(new IndicadorDetailInput()
                         {
-                            IndicadorId = i,
-                            FechaDesde = f,
-                            FechaHasta = f
+                            IndicadorId = indId,
+                            FechaDesde = DateTime.Parse(f),
+                            FechaHasta = DateTime.Parse(f)
                         });
 
-                        if (res.Nombres.ContainsKey(i))
+                        if (res.Nombres.ContainsKey(indId))
                         {
-                            res.Nombres[i] = item.Nombre;
+                            res.Nombres[indId] = item.Nombre;
                         }
                         else
                         {
-                            res.Nombres.Add(i, item.Nombre);
+                            res.Nombres.Add(indId, item.Nombre);
                         }
 
                         foreach (var cot in item.Cotizaciones)
