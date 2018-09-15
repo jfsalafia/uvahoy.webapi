@@ -65,36 +65,42 @@ namespace uvahoy.Indicadores
         {
             var res = new MultiIndicadorDetailOutput
             {
-                Nombres = new Dictionary<int, string>()
+                Nombres = new Dictionary<int, string>(),
+                Cotizaciones = new List<CotizacionDto>()
             };
 
             if (input.Indicadores != null && input.Fechas != null)
             {
-                foreach (var i in input.Indicadores.Split())
+                foreach (var i in input.Indicadores.Split(",").Select(x => int.Parse(x)))
                 {
-                    var indId = int.Parse(i);
-
-                    foreach (var f in input.Fechas.Split())
+                    foreach (var f in input.Fechas.Split(","))
                     {
-                        var item = GetIndicadorDetail(new IndicadorDetailInput()
+                        DateTime fecha;
+                        if (DateTime.TryParse(f, out fecha))
                         {
-                            IndicadorId = indId,
-                            FechaDesde = DateTime.Parse(f),
-                            FechaHasta = DateTime.Parse(f)
-                        });
+                            var item = GetIndicadorDetail(new IndicadorDetailInput()
+                            {
+                                IndicadorId = i,
+                                FechaDesde = fecha,
+                                FechaHasta = fecha
+                            });
 
-                        if (res.Nombres.ContainsKey(indId))
-                        {
-                            res.Nombres[indId] = item.Nombre;
-                        }
-                        else
-                        {
-                            res.Nombres.Add(indId, item.Nombre);
-                        }
+                            if (res.Nombres.ContainsKey(i))
+                            {
+                                res.Nombres[i] = item.Nombre;
+                            }
+                            else
+                            {
+                                res.Nombres.Add(i, item.Nombre);
+                            }
 
-                        foreach (var cot in item.Cotizaciones)
-                        {
-                            res.Cotizaciones.Add(cot);
+                            if (item.Cotizaciones != null)
+                            {
+                                foreach (var cot in item.Cotizaciones)
+                                {
+                                    res.Cotizaciones.Add(cot);
+                                }
+                            }
                         }
                     }
                 }
