@@ -68,15 +68,15 @@ namespace uvahoy.Indicadores
                 Nombres = new Dictionary<int, string>(),
                 Cotizaciones = new List<CotizacionDto>()
             };
+            var sep = input.Separador;
 
             if (input.Indicadores != null && input.Fechas != null)
             {
-                foreach (var i in input.Indicadores.Split(",").Select(x => int.Parse(x)))
+                foreach (var i in input.Indicadores.Split(sep).Select(x => int.Parse(x)))
                 {
-                    foreach (var f in input.Fechas.Split(","))
+                    foreach (var f in input.Fechas.Split(sep))
                     {
-                        DateTime fecha;
-                        if (DateTime.TryParse(f, out fecha))
+                        if (DateTime.TryParse(f, out DateTime fecha))
                         {
                             var item = GetIndicadorDetail(new IndicadorDetailInput()
                             {
@@ -164,7 +164,7 @@ namespace uvahoy.Indicadores
 
             }
 
-            for (var i = 0; i < diff.Days; i++)
+            for (var i = 0; i <= diff.Days; i++)
             {
                 var fechaBusqueda = input.FechaDesde.Date.AddDays(i);
 
