@@ -129,7 +129,7 @@ namespace uvahoy.Indicadores
 
             DateTime fh = GetWorkDay(input.FechaHasta.Value.Date);
 
-            DateTime fd = GetWorkDay(input.FechaDesde.Date);
+            DateTime fd = input.FechaDesde.Date;
 
 
             var dto = @indicador.MapTo<IndicadorDetailOutput>();
