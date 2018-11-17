@@ -127,7 +127,7 @@ namespace uvahoy.Indicadores
                 input.FechaHasta = input.FechaDesde.Date;
             }
 
-            DateTime fh = GetWorkDay(input.FechaHasta.Value.Date);
+            DateTime fh = input.FechaHasta.Value.Date;
 
             DateTime fd = input.FechaDesde.Date;
 
@@ -148,16 +148,23 @@ namespace uvahoy.Indicadores
             if (cotizacionesDB.Count() <= diff.Days && diff.Days >= 0)
             {
                 var cotizacionesCloud = GetCotizaciones(indicador.FuenteDatos, indicador.MetodoActualizacion, indicador.FormatoDatos, fd, fh);
+                var filterCloud = cotizacionesCloud.Where(c => fd <= c.Key.Date && fh >= c.Key.Date);
+
                 var keys = cotizacionesDB.Select(cdb => FormatDate(cdb.FechaHoraCotizacion.Date));
 
-                var faltantes = cotizacionesCloud.Where(c => !keys.Contains(FormatDate(c.Key.Date)));
+                var faltantes = filterCloud.Where(c => !keys.Contains(FormatDate(c.Key.Date)));
 
                 foreach (var vc in faltantes.Where(f => f.Value.HasValue))
                 {
-                    var cotDB = Cotizacion.Create(input.IndicadorId, vc.Key.Date, vc.Value.Value);
-                    _cotizacionRepository.Insert(cotDB);
+                    if(!cotizaciones.Any(c => c.FechaHoraCotizacion == vc.Key.Date))
+                    {
+                        var cotDB = Cotizacion.Create(input.IndicadorId, vc.Key.Date, vc.Value.Value);
+                        _cotizacionRepository.Insert(cotDB);
 
-                    cotizaciones.Add(cotDB.MapTo<CotizacionDto>());
+                        cotizaciones.Add(cotDB.MapTo<CotizacionDto>());
+
+                    }
+                    
                 }
 
 
@@ -273,7 +280,7 @@ namespace uvahoy.Indicadores
             }
             finally
             {
-                if (response != null)
+                if (!string.IsNullOrEmpty(response) && webResponse !=null)
                 {
                     webResponse.Close();
                 }
@@ -297,11 +304,6 @@ namespace uvahoy.Indicadores
                 foreach (var cot in cotizacionJSONDTO.historico)
                 {
                     items.Add(cot.Fecha, cot.Venta);
-                }
-
-                if (!items.ContainsKey(cotizacionJSONDTO.monedas.UltimaActualizacion.Date))
-                {
-                    items.Add(cotizacionJSONDTO.monedas.UltimaActualizacion.Date, cotizacionJSONDTO.monedas.Venta);
                 }
             }
             return items;
