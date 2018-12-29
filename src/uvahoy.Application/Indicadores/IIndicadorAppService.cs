@@ -18,5 +18,7 @@ namespace uvahoy.Indicadores
         Task RegistrarIndicadorUsuario(EntityDto input);
 
         MultiIndicadorDetailOutput GetMultiIndicadorDetail(MultiIndicadorDetailInput input);
+
+        MultiIndicadorDetailOutput GetCalculadorCotizaciones(IndicadorDetailInput input);
     }
 }

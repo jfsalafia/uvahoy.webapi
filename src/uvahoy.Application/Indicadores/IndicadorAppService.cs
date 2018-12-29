@@ -156,7 +156,7 @@ namespace uvahoy.Indicadores
 
                 foreach (var vc in faltantes.Where(f => f.Value.HasValue))
                 {
-                    if(!cotizaciones.Any(c => c.FechaHoraCotizacion == vc.Key.Date))
+                    if (!cotizaciones.Any(c => c.FechaHoraCotizacion == vc.Key.Date))
                     {
                         var cotDB = Cotizacion.Create(input.IndicadorId, vc.Key.Date, vc.Value.Value);
                         _cotizacionRepository.Insert(cotDB);
@@ -164,7 +164,7 @@ namespace uvahoy.Indicadores
                         cotizaciones.Add(cotDB.MapTo<CotizacionDto>());
 
                     }
-                    
+
                 }
 
 
@@ -280,7 +280,7 @@ namespace uvahoy.Indicadores
             }
             finally
             {
-                if (!string.IsNullOrEmpty(response) && webResponse !=null)
+                if (!string.IsNullOrEmpty(response) && webResponse != null)
                 {
                     webResponse.Close();
                 }
@@ -380,6 +380,23 @@ namespace uvahoy.Indicadores
                 }
             }
             return dicc;
+        }
+
+        public MultiIndicadorDetailOutput GetCalculadorCotizaciones(IndicadorDetailInput input)
+        {
+            var cots = new[] {
+                new CotizacionDto() {
+                    IndicadorId = input.IndicadorId,
+                    FechaHoraCotizacion = input.FechaDesde,
+                    ValorCotizacion = 1
+                }
+            };
+            
+            return new MultiIndicadorDetailOutput()
+            {
+                Nombres= null,
+                Cotizaciones = cots
+            };
         }
     }
 
