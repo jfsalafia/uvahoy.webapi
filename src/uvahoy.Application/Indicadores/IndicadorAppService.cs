@@ -384,19 +384,63 @@ namespace uvahoy.Indicadores
 
         public MultiIndicadorDetailOutput GetCalculadorCotizaciones(IndicadorDetailInput input)
         {
-            var cots = new[] {
-                new CotizacionDto() {
-                    IndicadorId = input.IndicadorId,
-                    FechaHoraCotizacion = input.FechaDesde,
-                    ValorCotizacion = 1
-                }
-            };
-            
-            return new MultiIndicadorDetailOutput()
+            var indicadores = _indicadorRepository
+             .GetAll()
+             .OrderBy(i => i.Nombre)
+             .ToList();
+
+            var indicadorPivot = indicadores.FirstOrDefault(e => e.Id == input.IndicadorId);
+
+            if (indicadorPivot != null)
             {
-                Nombres= null,
-                Cotizaciones = cots
-            };
+                var cotizPivot = GetIndicadorDetail(new IndicadorDetailInput()
+                {
+                    IndicadorId = indicadorPivot.Id,
+                    FechaDesde = input.FechaDesde,
+                    FechaHasta = input.FechaDesde
+                });
+
+                if (cotizPivot.Cotizaciones.Any())
+                {
+                    var valorCotizPivot = cotizPivot.Cotizaciones.Last().ValorCotizacion;
+
+                    if (valorCotizPivot != decimal.Zero)
+                    {
+                        var cots = indicadores.Select(i =>
+                        {
+                            var dto = new CotizacionDto()
+                            {
+                                IndicadorId = input.IndicadorId,
+                                FechaHoraCotizacion = input.FechaDesde,
+                                ValorCotizacion = decimal.Zero
+                            };
+
+                            var cotizIndicador = GetIndicadorDetail(new IndicadorDetailInput()
+                            {
+                                IndicadorId = i.Id,
+                                FechaDesde = input.FechaDesde,
+                                FechaHasta = input.FechaDesde
+                            });
+
+                            if (cotizIndicador.Cotizaciones.Any())
+                            {
+                                var valorCotiz = cotizIndicador.Cotizaciones.LastOrDefault().ValorCotizacion;
+                                dto.ValorCotizacion = valorCotiz / valorCotizPivot;
+                            }
+
+                            return dto;
+                        }
+                        ).ToList();
+
+                        return new MultiIndicadorDetailOutput()
+                        {
+                            Nombres = indicadores.ToDictionary(x => x.Id, x => x.Nombre),
+                            Cotizaciones = cots
+                        };
+                    }
+                }
+            }
+            return null;
         }
     }
 
