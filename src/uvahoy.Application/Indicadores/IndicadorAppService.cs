@@ -396,8 +396,7 @@ namespace uvahoy.Indicadores
                 var cotizPivot = GetIndicadorDetail(new IndicadorDetailInput()
                 {
                     IndicadorId = indicadorPivot.Id,
-                    FechaDesde = input.FechaDesde,
-                    FechaHasta = input.FechaDesde
+                    FechaDesde = input.FechaDesde
                 });
 
                 if (cotizPivot.Cotizaciones.Any())
@@ -410,7 +409,7 @@ namespace uvahoy.Indicadores
                         {
                             var dto = new CotizacionDto()
                             {
-                                IndicadorId = input.IndicadorId,
+                                IndicadorId = i.Id,
                                 FechaHoraCotizacion = input.FechaDesde,
                                 ValorCotizacion = decimal.Zero
                             };
@@ -418,8 +417,7 @@ namespace uvahoy.Indicadores
                             var cotizIndicador = GetIndicadorDetail(new IndicadorDetailInput()
                             {
                                 IndicadorId = i.Id,
-                                FechaDesde = input.FechaDesde,
-                                FechaHasta = input.FechaDesde
+                                FechaDesde = input.FechaDesde
                             });
 
                             if (cotizIndicador.Cotizaciones.Any())
