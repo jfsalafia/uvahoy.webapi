@@ -24,6 +24,19 @@ namespace uvahoy.Indicadores.Dto
         public ICollection<CotizacionDto> Cotizaciones { get; set; }
     }
 
+    public class CalculadorDetailInput : IValidatableObject
+    {
+        public bool EsIndicadorDefault { get; set; }
+
+        public int IndicadorId { get; set; }
+
+        public DateTime FechaDesde { get; set; }
+       
+        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+            yield return ValidationResult.Success;
+        }
+    }
     public class IndicadorDetailInput : IValidatableObject
     {
   

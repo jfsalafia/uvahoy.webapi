@@ -19,6 +19,6 @@ namespace uvahoy.Indicadores
 
         MultiIndicadorDetailOutput GetMultiIndicadorDetail(MultiIndicadorDetailInput input);
 
-        MultiIndicadorDetailOutput GetCalculadorCotizaciones(IndicadorDetailInput input);
+        MultiIndicadorDetailOutput GetCalculadorCotizaciones(CalculadorDetailInput input);
     }
 }
