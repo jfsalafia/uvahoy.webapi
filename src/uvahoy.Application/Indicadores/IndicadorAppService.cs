@@ -145,7 +145,7 @@ namespace uvahoy.Indicadores
 
             var diff = fh - fd;
 
-            if (cotizacionesDB.Count() <= diff.Days && diff.Days >= 0)
+            if (cotizacionesDB.Where(x => x.FechaHoraCotizacion >= fd && x.FechaHoraCotizacion <= fh).Count() <= diff.Days && diff.Days >= 0)
             {
                 var cotizacionesCloud = GetCotizaciones(indicador.FuenteDatos, indicador.MetodoActualizacion, indicador.FormatoDatos, fd, fh);
                 var filterCloud = cotizacionesCloud.Where(c => fd <= c.Key.Date && fh >= c.Key.Date);
