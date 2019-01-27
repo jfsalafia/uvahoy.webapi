@@ -11710,3 +11710,675 @@ INFO  2019-01-18 19:41:13,694 [6    ] ore.Mvc.Internal.ControllerActionInvoker -
 INFO  2019-01-18 19:41:13,750 [11   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'uvahoy.Indicadores.Dto.MultiIndicadorDetailOutput'.
 INFO  2019-01-18 19:41:13,774 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetMultiIndicadorDetail (uvahoy.Application) in 40376.7568ms
 INFO  2019-01-18 19:41:13,778 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 40441.8181ms 200 application/json; charset=utf-8
+DEBUG 2019-01-27 17:22:26,375 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-27 17:22:26,618 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-27 17:22:26,661 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.Web.Host.Startup.uvahoyWebHostModule, uvahoy.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:26,664 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyWebCoreModule, uvahoy.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:26,665 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyApplicationModule, uvahoy.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:26,665 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyCoreModule, uvahoy.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:26,665 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:26,666 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:26,666 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:26,667 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:26,667 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.EntityFrameworkCore.uvahoyEntityFrameworkModule, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:26,668 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:26,668 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:26,668 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:26,669 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:26,669 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:26,669 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:26,673 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-27 17:22:26,957 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:22:26,957 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:22:26,957 [1    ] o.Configuration.LanguageManagementConfig - Converted uvahoy (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:22:26,957 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:22:27,509 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: uvahoy.EntityFrameworkCore.uvahoyDbContext, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:22:29,552 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-27 17:22:29,707 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-27 17:22:29,765 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-27 17:22:29,786 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: uvahoy
+DEBUG 2019-01-27 17:22:29,817 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-27 17:22:30,269 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-27 17:22:30,381 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2019-01-27 17:22:30,381 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-27 17:22:30,388 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Users.Dto.CreateUserDto
+DEBUG 2019-01-27 17:22:30,389 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Users.Dto.UserDto
+DEBUG 2019-01-27 17:22:30,389 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-27 17:22:30,389 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-27 17:22:30,389 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-27 17:22:30,389 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.PermissionDto
+DEBUG 2019-01-27 17:22:30,389 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.RoleDto
+DEBUG 2019-01-27 17:22:30,390 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-27 17:22:30,390 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.MultiTenancy.Dto.TenantDto
+DEBUG 2019-01-27 17:22:30,390 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.CotizacionDto
+DEBUG 2019-01-27 17:22:30,390 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.IndicadorDetailOutput
+DEBUG 2019-01-27 17:22:30,390 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.IndicadorListDto
+INFO  2019-01-27 17:22:51,597 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-01-27 17:22:55,390 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-01-27 17:22:59,934 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host)
+INFO  2019-01-27 17:22:59,938 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host)
+INFO  2019-01-27 17:23:01,566 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) - Validation state: Valid
+INFO  2019-01-27 17:23:01,568 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) - Validation state: Valid
+INFO  2019-01-27 17:23:01,624 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 3.3066ms.
+INFO  2019-01-27 17:23:01,628 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 2.2216ms.
+INFO  2019-01-27 17:23:02,072 [15   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-01-27 17:23:02,077 [11   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-01-27 17:23:02,174 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) in 2166.7002ms
+INFO  2019-01-27 17:23:02,179 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) in 2166.6348ms
+INFO  2019-01-27 17:23:02,231 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10659.6275ms 0 
+INFO  2019-01-27 17:23:02,293 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6915.8029ms 302 
+INFO  2019-01-27 17:23:02,321 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+INFO  2019-01-27 17:23:02,362 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 43.0385ms 301 
+INFO  2019-01-27 17:23:02,372 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+INFO  2019-01-27 17:23:02,456 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 83.5209ms 200 text/html
+INFO  2019-01-27 17:23:02,554 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+INFO  2019-01-27 17:23:02,556 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/abp.js  
+INFO  2019-01-27 17:23:02,560 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/on-complete.js  
+INFO  2019-01-27 17:23:02,567 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+INFO  2019-01-27 17:23:02,572 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-01-27 17:23:02,608 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'C:\Proyectos\uvahoy.webapi\src\uvahoy.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2019-01-27 17:23:02,654 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/on-complete.js'. Physical path: 'C:\Proyectos\uvahoy.webapi\src\uvahoy.Web.Host\wwwroot\swagger\ui\on-complete.js'
+INFO  2019-01-27 17:23:02,677 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 79.2978ms 200 application/javascript
+INFO  2019-01-27 17:23:02,703 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 98.5935ms 200 application/javascript
+INFO  2019-01-27 17:23:02,715 [7    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2019-01-27 17:23:02,747 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 194.7799ms 200 text/css
+INFO  2019-01-27 17:23:02,776 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2019-01-27 17:23:02,782 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 208.3651ms 200 application/javascript
+INFO  2019-01-27 17:23:02,807 [7    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2019-01-27 17:23:02,813 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 246.5694ms 200 application/javascript
+INFO  2019-01-27 17:23:03,197 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+INFO  2019-01-27 17:23:03,301 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png  
+INFO  2019-01-27 17:23:03,306 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2019-01-27 17:23:03,311 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.8942ms 200 image/png
+INFO  2019-01-27 17:23:03,316 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-16x16.png  
+INFO  2019-01-27 17:23:03,321 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+INFO  2019-01-27 17:23:03,324 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.6934ms 200 image/png
+INFO  2019-01-27 17:23:03,513 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 322.1831ms 200 application/json;charset=utf-8
+INFO  2019-01-27 17:24:06,602 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=1&FechaDesde=01%2F26%2F2019&FechaHasta=01%2F26%2F2019  
+INFO  2019-01-27 17:24:06,669 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2019-01-27 17:24:10,319 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+INFO  2019-01-27 17:24:25,827 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 15502.4374ms.
+INFO  2019-01-27 17:24:25,882 [6    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'uvahoy.Indicadores.Dto.IndicadorDetailOutput'.
+INFO  2019-01-27 17:24:25,970 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) in 19291.1223ms
+INFO  2019-01-27 17:24:25,983 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 19374.2143ms 200 application/json; charset=utf-8
+DEBUG 2019-01-27 17:26:13,097 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-27 17:26:13,205 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-27 17:26:13,247 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.Web.Host.Startup.uvahoyWebHostModule, uvahoy.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:13,250 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyWebCoreModule, uvahoy.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:13,250 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyApplicationModule, uvahoy.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:13,250 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyCoreModule, uvahoy.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:13,251 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:13,251 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:13,251 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:13,252 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:13,252 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.EntityFrameworkCore.uvahoyEntityFrameworkModule, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:13,252 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:13,253 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:13,253 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:13,254 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:13,254 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:13,254 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:13,257 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-27 17:26:13,513 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:26:13,513 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:26:13,513 [1    ] o.Configuration.LanguageManagementConfig - Converted uvahoy (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:26:13,513 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:26:14,018 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: uvahoy.EntityFrameworkCore.uvahoyDbContext, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:26:14,960 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-27 17:26:15,011 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-27 17:26:15,057 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-27 17:26:15,079 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: uvahoy
+DEBUG 2019-01-27 17:26:15,119 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-27 17:26:15,275 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-27 17:26:15,323 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2019-01-27 17:26:15,323 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-27 17:26:15,329 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Users.Dto.CreateUserDto
+DEBUG 2019-01-27 17:26:15,330 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Users.Dto.UserDto
+DEBUG 2019-01-27 17:26:15,331 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-27 17:26:15,331 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-27 17:26:15,331 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-27 17:26:15,331 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.PermissionDto
+DEBUG 2019-01-27 17:26:15,331 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.RoleDto
+DEBUG 2019-01-27 17:26:15,332 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-27 17:26:15,332 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.MultiTenancy.Dto.TenantDto
+DEBUG 2019-01-27 17:26:15,332 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.CotizacionDto
+DEBUG 2019-01-27 17:26:15,332 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.IndicadorDetailOutput
+DEBUG 2019-01-27 17:26:15,332 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.IndicadorListDto
+INFO  2019-01-27 17:26:28,582 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-01-27 17:26:32,412 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-01-27 17:26:32,707 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host)
+INFO  2019-01-27 17:26:32,709 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host)
+INFO  2019-01-27 17:26:34,080 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) - Validation state: Valid
+INFO  2019-01-27 17:26:34,082 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) - Validation state: Valid
+INFO  2019-01-27 17:26:34,135 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 3.7761ms.
+INFO  2019-01-27 17:26:34,137 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 4.8068ms.
+INFO  2019-01-27 17:26:34,467 [7    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-01-27 17:26:34,468 [12   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-01-27 17:26:34,532 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) in 1767.7402ms
+INFO  2019-01-27 17:26:34,534 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) in 1767.7406ms
+INFO  2019-01-27 17:26:34,563 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6002.8374ms 0 
+INFO  2019-01-27 17:26:34,622 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2210.2335ms 302 
+INFO  2019-01-27 17:26:34,642 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+INFO  2019-01-27 17:26:34,702 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 63.665ms 200 text/html
+INFO  2019-01-27 17:26:34,746 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+INFO  2019-01-27 17:26:34,761 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-01-27 17:26:34,763 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+INFO  2019-01-27 17:26:34,868 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.css was not modified
+INFO  2019-01-27 17:26:34,872 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-standalone-preset.js was not modified
+INFO  2019-01-27 17:26:34,875 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-bundle.js was not modified
+INFO  2019-01-27 17:26:34,913 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 134.5322ms 304 application/javascript
+INFO  2019-01-27 17:26:34,929 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 140.7032ms 304 application/javascript
+INFO  2019-01-27 17:26:34,940 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 156.0247ms 304 text/css
+INFO  2019-01-27 17:26:35,474 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+INFO  2019-01-27 17:26:35,831 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 358.3321ms 200 application/json;charset=utf-8
+INFO  2019-01-27 17:27:39,574 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=1&FechaDesde=01%2F26%2F2019&FechaHasta=01%2F27%2F2019  
+INFO  2019-01-27 17:27:39,629 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2019-01-27 17:27:40,922 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+INFO  2019-01-27 17:28:06,357 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 25431.3059ms.
+INFO  2019-01-27 17:28:06,398 [22   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'uvahoy.Indicadores.Dto.IndicadorDetailOutput'.
+INFO  2019-01-27 17:28:06,426 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) in 26793.9745ms
+INFO  2019-01-27 17:28:06,429 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 26856.0418ms 200 application/json; charset=utf-8
+INFO  2019-01-27 17:28:45,830 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=1&FechaDesde=01%2F01%2F2019&FechaHasta=01%2F01%2F2019  
+INFO  2019-01-27 17:28:45,840 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2019-01-27 17:28:45,854 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+INFO  2019-01-27 17:29:10,953 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 25095.4084ms.
+INFO  2019-01-27 17:29:10,963 [22   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'uvahoy.Indicadores.Dto.IndicadorDetailOutput'.
+INFO  2019-01-27 17:29:10,968 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) in 25123.169ms
+INFO  2019-01-27 17:29:10,972 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25141.5375ms 200 application/json; charset=utf-8
+INFO  2019-01-27 17:29:55,721 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=1&FechaDesde=01%2F01%2F2019&FechaHasta=01%2F01%2F2019  
+INFO  2019-01-27 17:29:55,728 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2019-01-27 17:29:55,737 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+DEBUG 2019-01-27 17:33:30,607 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-27 17:33:30,710 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-27 17:33:30,751 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.Web.Host.Startup.uvahoyWebHostModule, uvahoy.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:30,755 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyWebCoreModule, uvahoy.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:30,755 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyApplicationModule, uvahoy.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:30,755 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyCoreModule, uvahoy.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:30,756 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:30,756 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:30,756 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:30,757 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:30,757 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.EntityFrameworkCore.uvahoyEntityFrameworkModule, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:30,758 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:30,758 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:30,758 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:30,758 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:30,759 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:30,759 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:30,762 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-27 17:33:31,027 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:33:31,027 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:33:31,027 [1    ] o.Configuration.LanguageManagementConfig - Converted uvahoy (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:33:31,027 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:33:31,515 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: uvahoy.EntityFrameworkCore.uvahoyDbContext, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:33:32,516 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-27 17:33:32,590 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-27 17:33:32,636 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-27 17:33:32,656 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: uvahoy
+DEBUG 2019-01-27 17:33:32,692 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-27 17:33:32,835 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-27 17:33:32,883 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2019-01-27 17:33:32,883 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-27 17:33:32,890 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Users.Dto.CreateUserDto
+DEBUG 2019-01-27 17:33:32,891 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Users.Dto.UserDto
+DEBUG 2019-01-27 17:33:32,891 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-27 17:33:32,891 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-27 17:33:32,892 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-27 17:33:32,892 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.PermissionDto
+DEBUG 2019-01-27 17:33:32,892 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.RoleDto
+DEBUG 2019-01-27 17:33:32,893 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-27 17:33:32,893 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.MultiTenancy.Dto.TenantDto
+DEBUG 2019-01-27 17:33:32,893 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.CotizacionDto
+DEBUG 2019-01-27 17:33:32,893 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.IndicadorDetailOutput
+DEBUG 2019-01-27 17:33:32,893 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.IndicadorListDto
+INFO  2019-01-27 17:33:44,648 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-01-27 17:33:48,483 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-01-27 17:33:48,576 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host)
+INFO  2019-01-27 17:33:48,578 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host)
+INFO  2019-01-27 17:33:49,776 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) - Validation state: Valid
+INFO  2019-01-27 17:33:49,778 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) - Validation state: Valid
+INFO  2019-01-27 17:33:49,830 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 3.0303ms.
+INFO  2019-01-27 17:33:49,832 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 1.9218ms.
+INFO  2019-01-27 17:33:50,107 [13   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-01-27 17:33:50,109 [7    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-01-27 17:33:50,188 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) in 1546.5976ms
+INFO  2019-01-27 17:33:50,192 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) in 1546.6519ms
+INFO  2019-01-27 17:33:50,228 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5600.6704ms 0 
+INFO  2019-01-27 17:33:50,283 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1798.9605ms 302 
+INFO  2019-01-27 17:33:50,298 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+INFO  2019-01-27 17:33:50,345 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 48.6202ms 200 text/html
+INFO  2019-01-27 17:33:50,372 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+INFO  2019-01-27 17:33:50,398 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+INFO  2019-01-27 17:33:50,401 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-01-27 17:33:50,496 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-bundle.js was not modified
+INFO  2019-01-27 17:33:50,498 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.css was not modified
+INFO  2019-01-27 17:33:50,500 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-standalone-preset.js was not modified
+INFO  2019-01-27 17:33:50,552 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 131.1524ms 304 application/javascript
+INFO  2019-01-27 17:33:50,563 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 136.2419ms 304 text/css
+INFO  2019-01-27 17:33:50,568 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 127.2065ms 304 application/javascript
+INFO  2019-01-27 17:33:50,704 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+INFO  2019-01-27 17:33:50,943 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 238.1554ms 200 application/json;charset=utf-8
+INFO  2019-01-27 17:34:20,410 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=1&FechaDesde=01%2F01%2F2019&FechaHasta=01%2F27%2F2019  
+INFO  2019-01-27 17:34:20,461 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2019-01-27 17:34:21,616 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+ERROR 2019-01-27 17:34:46,164 [6    ] Mvc.ExceptionHandling.AbpExceptionFilter - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at uvahoy.Indicadores.IndicadorAppService.GetCotizacionesFromHTML(String html) in C:\Proyectos\uvahoy.webapi\src\uvahoy.Application\Indicadores\IndicadorAppService.cs:line 339
+   at uvahoy.Indicadores.IndicadorAppService.GetCotizaciones(String url, String metodoActualizacion, String formatoDatos, DateTime fechaCotizacionDesde, DateTime fechaCotizacionHasta) in C:\Proyectos\uvahoy.webapi\src\uvahoy.Application\Indicadores\IndicadorAppService.cs:line 268
+   at uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail(IndicadorDetailInput input) in C:\Proyectos\uvahoy.webapi\src\uvahoy.Application\Indicadores\IndicadorAppService.cs:line 150
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__24.MoveNext()
+INFO  2019-01-27 17:34:46,174 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) in 25708.5458ms
+ERROR 2019-01-27 17:34:46,240 [6    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLK4IQRF8738", Request id "0HLK4IQRF8738:00000005": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at uvahoy.Indicadores.IndicadorAppService.GetCotizacionesFromHTML(String html) in C:\Proyectos\uvahoy.webapi\src\uvahoy.Application\Indicadores\IndicadorAppService.cs:line 339
+   at uvahoy.Indicadores.IndicadorAppService.GetCotizaciones(String url, String metodoActualizacion, String formatoDatos, DateTime fechaCotizacionDesde, DateTime fechaCotizacionHasta) in C:\Proyectos\uvahoy.webapi\src\uvahoy.Application\Indicadores\IndicadorAppService.cs:line 268
+   at uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail(IndicadorDetailInput input) in C:\Proyectos\uvahoy.webapi\src\uvahoy.Application\Indicadores\IndicadorAppService.cs:line 150
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ExceptionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.<Invoke>d__2.MoveNext() in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Security\AbpSecurityHeadersMiddleware.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<ProcessRequests>d__186`1.MoveNext()
+INFO  2019-01-27 17:34:46,256 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25844.5089ms 500 
+INFO  2019-01-27 17:34:57,275 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=1&FechaDesde=01%2F01%2F2019&FechaHasta=01%2F27%2F2019  
+INFO  2019-01-27 17:34:57,288 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2019-01-27 17:34:57,297 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+DEBUG 2019-01-27 17:36:30,365 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-27 17:36:30,471 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-27 17:36:30,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.Web.Host.Startup.uvahoyWebHostModule, uvahoy.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:30,514 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyWebCoreModule, uvahoy.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:30,514 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyApplicationModule, uvahoy.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:30,515 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyCoreModule, uvahoy.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:30,515 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:30,515 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:30,515 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:30,516 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:30,516 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.EntityFrameworkCore.uvahoyEntityFrameworkModule, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:30,517 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:30,517 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:30,517 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:30,517 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:30,517 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:30,518 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:30,521 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-27 17:36:30,785 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:36:30,785 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:36:30,785 [1    ] o.Configuration.LanguageManagementConfig - Converted uvahoy (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:36:30,785 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:36:31,273 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: uvahoy.EntityFrameworkCore.uvahoyDbContext, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:36:32,233 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-27 17:36:32,288 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-27 17:36:32,335 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-27 17:36:32,355 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: uvahoy
+DEBUG 2019-01-27 17:36:32,386 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-27 17:36:32,530 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-27 17:36:32,591 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2019-01-27 17:36:32,591 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-27 17:36:32,597 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Users.Dto.CreateUserDto
+DEBUG 2019-01-27 17:36:32,598 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Users.Dto.UserDto
+DEBUG 2019-01-27 17:36:32,599 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-27 17:36:32,599 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-27 17:36:32,599 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-27 17:36:32,599 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.PermissionDto
+DEBUG 2019-01-27 17:36:32,599 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.RoleDto
+DEBUG 2019-01-27 17:36:32,600 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-27 17:36:32,600 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.MultiTenancy.Dto.TenantDto
+DEBUG 2019-01-27 17:36:32,600 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.CotizacionDto
+DEBUG 2019-01-27 17:36:32,600 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.IndicadorDetailOutput
+DEBUG 2019-01-27 17:36:32,600 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.IndicadorListDto
+INFO  2019-01-27 17:36:40,286 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-01-27 17:36:44,113 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-01-27 17:36:44,444 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host)
+INFO  2019-01-27 17:36:44,446 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host)
+INFO  2019-01-27 17:36:45,627 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) - Validation state: Valid
+INFO  2019-01-27 17:36:45,629 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) - Validation state: Valid
+INFO  2019-01-27 17:36:45,682 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 2.0903ms.
+INFO  2019-01-27 17:36:45,684 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 3.2296ms.
+INFO  2019-01-27 17:36:45,941 [11   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-01-27 17:36:45,943 [13   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-01-27 17:36:46,007 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) in 1504.0629ms
+INFO  2019-01-27 17:36:46,011 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) in 1504.0898ms
+INFO  2019-01-27 17:36:46,045 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5788.548ms 0 
+INFO  2019-01-27 17:36:46,077 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1965.4401ms 302 
+INFO  2019-01-27 17:36:46,095 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+INFO  2019-01-27 17:36:46,137 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 42.1169ms 200 text/html
+INFO  2019-01-27 17:36:46,167 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+INFO  2019-01-27 17:36:46,192 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+INFO  2019-01-27 17:36:46,195 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-01-27 17:36:46,269 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-bundle.js was not modified
+INFO  2019-01-27 17:36:46,270 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.css was not modified
+INFO  2019-01-27 17:36:46,273 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-standalone-preset.js was not modified
+INFO  2019-01-27 17:36:46,323 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 105.1982ms 304 application/javascript
+INFO  2019-01-27 17:36:46,325 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 108.3158ms 304 application/javascript
+INFO  2019-01-27 17:36:46,352 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 116.8838ms 304 text/css
+INFO  2019-01-27 17:36:46,501 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+INFO  2019-01-27 17:36:46,746 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 245.1073ms 200 application/json;charset=utf-8
+INFO  2019-01-27 17:37:02,567 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=3&FechaDesde=01%2F27%2F2019&FechaHasta=01%2F27%2F2019  
+INFO  2019-01-27 17:37:02,620 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2019-01-27 17:37:03,832 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+WARN  2019-01-27 17:37:07,108 [12   ] Mvc.ExceptionHandling.AbpExceptionFilter - Indicador no encontrado.
+Abp.UI.UserFriendlyException: Indicador no encontrado.
+   at uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail(IndicadorDetailInput input) in C:\Proyectos\uvahoy.webapi\src\uvahoy.Application\Indicadores\IndicadorAppService.cs:line 125
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__24.MoveNext()
+INFO  2019-01-27 17:37:07,119 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) in 4494.4929ms
+ERROR 2019-01-27 17:37:07,181 [12   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLK4ISH29N3P", Request id "0HLK4ISH29N3P:00000003": An unhandled exception was thrown by the application.
+Abp.UI.UserFriendlyException: Indicador no encontrado.
+   at uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail(IndicadorDetailInput input) in C:\Proyectos\uvahoy.webapi\src\uvahoy.Application\Indicadores\IndicadorAppService.cs:line 125
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ExceptionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.<Invoke>d__2.MoveNext() in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Security\AbpSecurityHeadersMiddleware.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<ProcessRequests>d__186`1.MoveNext()
+INFO  2019-01-27 17:37:07,200 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4632.359ms 500 
+INFO  2019-01-27 17:37:11,399 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=1&FechaDesde=01%2F27%2F2019&FechaHasta=01%2F27%2F2019  
+INFO  2019-01-27 17:37:11,412 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2019-01-27 17:37:11,460 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+DEBUG 2019-01-27 17:39:35,056 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-27 17:39:35,164 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-27 17:39:35,204 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.Web.Host.Startup.uvahoyWebHostModule, uvahoy.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:35,208 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyWebCoreModule, uvahoy.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:35,208 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyApplicationModule, uvahoy.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:35,208 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.uvahoyCoreModule, uvahoy.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:35,208 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:35,209 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:35,209 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:35,210 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:35,210 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: uvahoy.EntityFrameworkCore.uvahoyEntityFrameworkModule, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:35,210 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:35,210 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:35,211 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:35,211 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:35,211 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:35,211 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:35,215 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-27 17:39:35,469 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:39:35,469 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:39:35,469 [1    ] o.Configuration.LanguageManagementConfig - Converted uvahoy (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:39:35,469 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-27 17:39:35,956 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: uvahoy.EntityFrameworkCore.uvahoyDbContext, uvahoy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-27 17:39:36,914 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-27 17:39:36,967 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-27 17:39:37,014 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-27 17:39:37,034 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: uvahoy
+DEBUG 2019-01-27 17:39:37,064 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-27 17:39:37,218 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-27 17:39:37,266 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2019-01-27 17:39:37,266 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-27 17:39:37,273 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Users.Dto.CreateUserDto
+DEBUG 2019-01-27 17:39:37,274 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Users.Dto.UserDto
+DEBUG 2019-01-27 17:39:37,274 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-27 17:39:37,275 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-27 17:39:37,275 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-27 17:39:37,275 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.PermissionDto
+DEBUG 2019-01-27 17:39:37,275 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Roles.Dto.RoleDto
+DEBUG 2019-01-27 17:39:37,276 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-27 17:39:37,276 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.MultiTenancy.Dto.TenantDto
+DEBUG 2019-01-27 17:39:37,276 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.CotizacionDto
+DEBUG 2019-01-27 17:39:37,276 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.IndicadorDetailOutput
+DEBUG 2019-01-27 17:39:37,276 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - uvahoy.Indicadores.Dto.IndicadorListDto
+INFO  2019-01-27 17:39:45,845 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-01-27 17:39:49,676 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-01-27 17:39:50,018 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host)
+INFO  2019-01-27 17:39:50,020 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host)
+INFO  2019-01-27 17:39:51,180 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) - Validation state: Valid
+INFO  2019-01-27 17:39:51,181 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) - Validation state: Valid
+INFO  2019-01-27 17:39:51,237 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 3.8197ms.
+INFO  2019-01-27 17:39:51,240 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 4.5425ms.
+INFO  2019-01-27 17:39:51,540 [7    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-01-27 17:39:51,542 [13   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-01-27 17:39:51,601 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) in 1529.5668ms
+INFO  2019-01-27 17:39:51,603 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Web.Host.Controllers.HomeController.Index (uvahoy.Web.Host) in 1529.5518ms
+INFO  2019-01-27 17:39:51,622 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5802.4399ms 0 
+INFO  2019-01-27 17:39:51,658 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1982.178ms 302 
+INFO  2019-01-27 17:39:51,670 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+INFO  2019-01-27 17:39:51,712 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 42.5976ms 200 text/html
+INFO  2019-01-27 17:39:51,746 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+INFO  2019-01-27 17:39:51,750 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+INFO  2019-01-27 17:39:51,760 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-01-27 17:39:51,833 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-bundle.js was not modified
+INFO  2019-01-27 17:39:51,834 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-standalone-preset.js was not modified
+INFO  2019-01-27 17:39:51,838 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.css was not modified
+INFO  2019-01-27 17:39:51,871 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 102.5656ms 304 text/css
+INFO  2019-01-27 17:39:51,873 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 98.0162ms 304 application/javascript
+INFO  2019-01-27 17:39:51,881 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 93.5263ms 304 application/javascript
+INFO  2019-01-27 17:39:52,122 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+INFO  2019-01-27 17:39:52,365 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 243.0392ms 200 application/json;charset=utf-8
+INFO  2019-01-27 17:40:08,067 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=3&FechaDesde=01%2F27%2F2019&FechaHasta=01%2F27%2F2019  
+INFO  2019-01-27 17:40:08,122 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2019-01-27 17:40:09,291 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+WARN  2019-01-27 17:40:13,008 [6    ] Mvc.ExceptionHandling.AbpExceptionFilter - Indicador no encontrado.
+Abp.UI.UserFriendlyException: Indicador no encontrado.
+   at uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail(IndicadorDetailInput input) in C:\Proyectos\uvahoy.webapi\src\uvahoy.Application\Indicadores\IndicadorAppService.cs:line 125
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__24.MoveNext()
+INFO  2019-01-27 17:40:13,017 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) in 4891.4032ms
+ERROR 2019-01-27 17:40:13,074 [6    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLK4IU83HSDP", Request id "0HLK4IU83HSDP:00000005": An unhandled exception was thrown by the application.
+Abp.UI.UserFriendlyException: Indicador no encontrado.
+   at uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail(IndicadorDetailInput input) in C:\Proyectos\uvahoy.webapi\src\uvahoy.Application\Indicadores\IndicadorAppService.cs:line 125
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ExceptionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.<Invoke>d__2.MoveNext() in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Security\AbpSecurityHeadersMiddleware.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<ProcessRequests>d__186`1.MoveNext()
+INFO  2019-01-27 17:40:13,088 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5021.844ms 500 
+INFO  2019-01-27 17:40:16,843 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Indicador/GetIndicadorDetail?IndicadorId=1&FechaDesde=01%2F27%2F2019&FechaHasta=01%2F27%2F2019  
+INFO  2019-01-27 17:40:16,853 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetIndicadorDetail", controller = "Indicador"}. Executing action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application)
+INFO  2019-01-27 17:40:16,866 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) with arguments (uvahoy.Indicadores.Dto.IndicadorDetailInput) - Validation state: Valid
+INFO  2019-01-27 17:40:56,927 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 40056.3868ms.
+INFO  2019-01-27 17:40:56,985 [12   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'uvahoy.Indicadores.Dto.IndicadorDetailOutput'.
+INFO  2019-01-27 17:40:57,014 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action uvahoy.Indicadores.IndicadorAppService.GetIndicadorDetail (uvahoy.Application) in 40157.0609ms
+INFO  2019-01-27 17:40:57,018 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 40175.6197ms 200 application/json; charset=utf-8

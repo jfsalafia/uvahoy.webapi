@@ -326,7 +326,7 @@ namespace uvahoy.Indicadores
 
             foreach (var contenidoNode in contenidoNodes)
             {
-                var tablaNode = contenidoNode.SelectSingleNode("//table[@id='tabla']");
+                var tablaNode = contenidoNode.SelectSingleNode("//table");
 
                 if (tablaNode != null)
                 {
@@ -336,7 +336,7 @@ namespace uvahoy.Indicadores
 
                     if (headNode != null)
                     {
-                        foreach (var cabeceraNode in headNode.SelectNodes("./tr/th/b"))
+                        foreach (var cabeceraNode in headNode.SelectNodes("./tr/th"))
                         {
                             var k = cabeceraNode.InnerText.ToUpper().Trim();
                             if (diccOrden.ContainsKey(k))
@@ -346,35 +346,39 @@ namespace uvahoy.Indicadores
                             orden++;
                         }
                     }
-
-                    var filas = tablaNode.SelectNodes("./tr");
-                    foreach (var fila in filas)
+                    var bodyNode = tablaNode.SelectSingleNode("./tbody");
+                    if (bodyNode != null)
                     {
-                        var key = string.Empty;
-                        decimal value = decimal.Zero;
-                        var ordenColumna = 0;
+                        var filas = bodyNode.SelectNodes("./tr");
 
-                        var columnas = fila.SelectNodes("./td");
-                        foreach (var columna in columnas)
+                        foreach (var fila in filas)
                         {
-                            if (ordenColumna == diccOrden["FECHA"])
-                            {
-                                key = columna.InnerText.ToUpper();
-                            }
-                            else if (ordenColumna == diccOrden["VALOR"])
-                            {
-                                decimal.TryParse(columna.InnerText, System.Globalization.NumberStyles.Any, globInfo, out value);
-                            }
-                            ordenColumna++;
-                        }
+                            var key = string.Empty;
+                            decimal value = decimal.Zero;
+                            var ordenColumna = 0;
 
-                        if (!string.IsNullOrEmpty(key) && value != decimal.Zero)
-                        {
-                            if (DateTime.TryParse(key, globInfo, System.Globalization.DateTimeStyles.None, out DateTime fecha))
+                            var columnas = fila.SelectNodes("./td");
+                            foreach (var columna in columnas)
                             {
-                                dicc.TryAdd(fecha, value);
+                                if (ordenColumna == diccOrden["FECHA"])
+                                {
+                                    key = columna.InnerText.ToUpper();
+                                }
+                                else if (ordenColumna == diccOrden["VALOR"])
+                                {
+                                    decimal.TryParse(columna.InnerText, System.Globalization.NumberStyles.Any, globInfo, out value);
+                                }
+                                ordenColumna++;
                             }
 
+                            if (!string.IsNullOrEmpty(key) && value != decimal.Zero)
+                            {
+                                if (DateTime.TryParse(key, globInfo, System.Globalization.DateTimeStyles.None, out DateTime fecha))
+                                {
+                                    dicc.TryAdd(fecha, value);
+                                }
+
+                            }
                         }
                     }
                 }
