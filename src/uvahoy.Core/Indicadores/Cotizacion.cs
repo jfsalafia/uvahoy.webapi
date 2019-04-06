@@ -19,7 +19,7 @@ namespace uvahoy.Indicadores
         [Required]
         public virtual DateTime FechaHoraCotizacion { get; protected set; }
 
-        public virtual decimal? ValorCotizacion { get; protected set; }
+        public virtual decimal? ValorCotizacion { get; set; }
 
         public bool SinCotizacion
         {

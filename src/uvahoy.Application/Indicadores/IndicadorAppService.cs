@@ -162,13 +162,30 @@ namespace uvahoy.Indicadores
                         _cotizacionRepository.Insert(cotDB);
 
                         cotizaciones.Add(cotDB.MapTo<CotizacionDto>());
-
                     }
-
                 }
 
+                foreach (var cot in cotizacionesDB.Where(c => c.FechaHoraCotizacion.Date >= DateTime.UtcNow.Date))
+                {
+                    var k = FormatDate(cot.FechaHoraCotizacion.Date);
 
+                    if (filterCloud.Any(c => FormatDate(c.Key) == k))
+                    {
+                        var cloudCot = filterCloud.First(c => FormatDate(c.Key) == k);
 
+                        if (cloudCot.Value.HasValue)
+                        {
+                            cot.ValorCotizacion = cloudCot.Value.Value;
+
+                            _cotizacionRepository.Update(cot);
+
+                            if (cotizaciones.Any(c => c.FechaHoraCotizacion == cot.FechaHoraCotizacion))
+                            {
+                                cotizaciones.First(c => c.FechaHoraCotizacion == cot.FechaHoraCotizacion).ValorCotizacion = cloudCot.Value.Value;
+                            }
+                        } 
+                    }
+                }
             }
 
             for (var i = 0; i <= diff.Days; i++)
