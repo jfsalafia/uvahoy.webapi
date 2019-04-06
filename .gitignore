@@ -254,3 +254,5 @@ paket-files/
 
 src/uvahoy.Web.Host/App_Data/Logs
 src/uvahoy.Web.Host/build_output
+
+src/uvahoy.Web.Host/logs.txt
