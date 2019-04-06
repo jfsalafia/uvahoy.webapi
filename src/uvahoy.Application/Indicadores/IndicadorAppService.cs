@@ -165,13 +165,13 @@ namespace uvahoy.Indicadores
                     }
                 }
 
-                foreach (var cot in cotizacionesDB.Where(c => c.FechaHoraCotizacion.Date >= DateTime.UtcNow.Date))
+                foreach (var cot in cotizacionesDB.Where(x => x.FechaHoraCotizacion.Date >= DateTime.Now.Date.AddDays(-1)))
                 {
                     var k = FormatDate(cot.FechaHoraCotizacion.Date);
 
-                    if (filterCloud.Any(c => FormatDate(c.Key) == k))
+                    if (cotizacionesCloud.Any(c => FormatDate(c.Key) == k))
                     {
-                        var cloudCot = filterCloud.First(c => FormatDate(c.Key) == k);
+                        var cloudCot = cotizacionesCloud.First(c => FormatDate(c.Key) == k);
 
                         if (cloudCot.Value.HasValue)
                         {
